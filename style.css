@@ -3024,9 +3024,9 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .events .service-time {
     margin-bottom: 16px;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: 10px;
-    font-size: 22px;
+    font-size: 20px;
   }
   .events .sunday-time-table {
     margin-bottom: 24px;
@@ -3034,7 +3034,7 @@ input[type="range"]::-webkit-slider-thumb {
   .events .sunday-time-table .fello-day {
     color: #C46508;
     margin-right: 30px;
-    font-size: 22px;
+    font-size: 20px;
     margin-left: -10px;
   }
   .events .sunday-time-table .fello-day span {
@@ -3043,6 +3043,9 @@ input[type="range"]::-webkit-slider-thumb {
   .events .sunday-time-table p {
     font-size: 16px;
     margin-right: 10%;
+  }
+  .events .sunday-time-table .time {
+    font-size: 16px;
   }
   .events .menfellowship .color-card {
     margin: auto;
@@ -3054,7 +3057,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .events .menfellowship .color-card p {
     font-size: 16px;
-    line-height: 1.16;
+    line-height: 1.1;
     margin-bottom: 0;
   }
   .events .menfellowship img {
@@ -3899,6 +3902,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .coming-up-second {
     margin: 0 0 0 0;
+    margin: auto;
   }
   .coming-up-second .events-inner2 {
     display: -webkit-box;
@@ -3910,7 +3914,7 @@ input[type="range"]::-webkit-slider-thumb {
     margin-bottom: 30px;
   }
   .coming-up-second .events-inner2 img {
-    width: 150px;
+    max-width: 150px;
     height: 183px;
     margin-left: 4%;
     -o-object-fit: cover;
@@ -4565,8 +4569,11 @@ input[type="range"]::-webkit-slider-thumb {
     width: 200px;
     margin-right: 10px;
   }
+  .requests .req .req-inner .req-infr p {
+    font-size: 18px;
+  }
   .requests .req .req-inner .req-infr .heading {
-    font-size: 25px;
+    font-size: 18px;
     margin-bottom: 27px;
   }
   .requests .req .req-inner .req-infr .heading span {

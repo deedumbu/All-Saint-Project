@@ -1072,17 +1072,18 @@ transition: all .8s ease-in-out;top: 19%;left:50%;	transform: translate(-50%, 50
 		span{display: block;margin-top: 4px;}
 	}
 	}
-	.service-time{margin-bottom: 16px;margin-top: 40px;margin-left: 10px;font-size: 22px;}
+	.service-time{margin-bottom: 16px;margin-top: 60px;margin-left: 10px;font-size: 20px;}
 	.sunday-time-table{margin-bottom: 24px;
-		.fello-day{color: $heading;margin-right:30px;font-size:22px;margin-left:-10px;
+		.fello-day{color: $heading;margin-right:30px;font-size:20px;margin-left:-10px;
 		span{color: $black;}
 		}
 		p{font-size: 16px;margin-right: 10%;}
+		.time{font-size:16px;}
 	}
 	.menfellowship{
 	.color-card{margin: auto;width:100%;margin-right:19px;
 	.heading-infr{font-size: 16px;}
-	p{font-size: 16px;line-height: 1.16;margin-bottom: 0;}
+	p{font-size: 16px;line-height: 1.1;margin-bottom: 0;}
 	
 	}
 	img{display:none;}
@@ -1423,9 +1424,9 @@ h2{margin: 17px 0 24px 0;font-size: 35px;font-family: $medium;}
 	
 	}
 
-	.coming-up-second{ margin:0 0 0 0;
+	.coming-up-second{ margin:0 0 0 0;margin:auto;
 		.events-inner2{@include flex();margin-bottom:30px;
-			img{width: 150px;height: 183px;margin-left: 4%;object-fit: cover;margin-bottom: 30px;}
+			img{max-width: 150px;height: 183px;margin-left: 4%;object-fit: cover;margin-bottom: 30px;}
 		   .event-details{margin-left:35px;
 			h3{font-size: 16px;margin-bottom: 15px;}
 			.day{font-size: 20px;margin-bottom: 10px;}
@@ -1698,7 +1699,8 @@ h2{margin: 17px 0 24px 0;font-size: 35px;font-family: $medium;}
 		   .req-inner{margin-bottom:58px;display:flex;margin-left:7%;
 		   img{width: 200px;margin-right: 10px;}
 		.req-infr{ 
-		   .heading{font-size: 25px;margin-bottom: 27px;
+			p{font-size: 18px;}
+		   .heading{font-size: 18px;margin-bottom: 27px;
 		   span{display: block;}
 		   }
 	   .number{font-size: 18px;margin-top:31px;display: block;font-family: $regular;}
