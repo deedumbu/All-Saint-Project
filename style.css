@@ -59,7 +59,6 @@ html, body {
 .head {
   position: relative;
   z-index: 200;
-  display: none;
 }
 
 .head .nav-contact {
