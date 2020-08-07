@@ -56,9 +56,28 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.scroll {
+  background-color: #A1572F;
+  color: #454545;
+}
+
+button:focus {
+  outline: none;
+}
+
 .head {
-  position: relative;
   z-index: 200;
+  position: relative;
+  top: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  background-color: transparent;
 }
 
 .head .nav-contact {
@@ -70,9 +89,6 @@ html, body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
-  background: #C46508;
-  top: 0;
-  padding: 2% 0%;
 }
 
 .head .nav-contact .call-us {
@@ -2531,6 +2547,11 @@ input[type="range"]::-webkit-slider-thumb {
   .head .nav-contact .call-us {
     padding-right: 12%;
   }
+  .head .nav-contact .call-us:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: white;
+  }
   .head .nav {
     position: fixed;
     top: 0;
@@ -2604,6 +2625,11 @@ input[type="range"]::-webkit-slider-thumb {
     left: 58px;
     right: -95px;
   }
+  .head .call-us:hover {
+    -webkit-transition: 0;
+    transition: 0;
+    color: white;
+  }
   .banner {
     background-size: cover;
     height: 550px;
@@ -2640,6 +2666,12 @@ input[type="range"]::-webkit-slider-thumb {
     line-height: 1.1;
     text-align: center;
   }
+  .banner a:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: #454545;
+    background-color: white;
+  }
   .about-all {
     padding-top: 84px;
     display: -webkit-box;
@@ -2668,6 +2700,11 @@ input[type="range"]::-webkit-slider-thumb {
     left: 49%;
     font-size: 20px;
   }
+  .about-all .about-img .overlay a:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: white;
+  }
   .about-all .about-img2 {
     width: 300px;
     height: 240px;
@@ -2685,6 +2722,11 @@ input[type="range"]::-webkit-slider-thumb {
     z-index: 2;
     width: 100%;
   }
+  .about-all .about-img2 .overlay a:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: white;
+  }
   .about-all .about-img3 {
     width: 300px;
     height: 240px;
@@ -2701,6 +2743,11 @@ input[type="range"]::-webkit-slider-thumb {
     z-index: 2;
     width: 100%;
     width: 100%;
+  }
+  .about-all .about-img3 .overlay a:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: white;
   }
   .about-us {
     text-align: center;
@@ -2881,6 +2928,12 @@ input[type="range"]::-webkit-slider-thumb {
     padding: 15px 0;
     text-decoration: none;
   }
+  .work-section .ourwek .work-inner .infr .w-btn:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: white;
+    background-color: #1C0902;
+  }
   .work-section .ourwek .work-inner .infr .items {
     margin-top: 30px;
   }
@@ -3012,6 +3065,11 @@ input[type="range"]::-webkit-slider-thumb {
   .events .see-more-btn {
     margin-left: 27px;
   }
+  .events .see-more-btn:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: #454545;
+  }
   .events .sunday-time-table {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3071,6 +3129,11 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 24px;
     font-family: "Roboto-medium";
   }
+  .notices h3:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: #C46508;
+  }
   .notices h2 {
     font-size: 35px;
     margin-top: 29px;
@@ -3122,6 +3185,11 @@ input[type="range"]::-webkit-slider-thumb {
     text-align: center;
     font-size: 24px;
     color: #C46508;
+  }
+  .latest-semons h3:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: #C46508 !important;
   }
   .latest-semons h2 {
     font-size: 30px !important;
@@ -3197,6 +3265,14 @@ input[type="range"]::-webkit-slider-thumb {
     width: 263px;
     height: 55px;
     font-size: 22px;
+  }
+  .donations .donation-inner .btn:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: white;
+    background: #1C0902;
+    border: none;
+    outline: 0;
   }
   .payments {
     margin: 20% 0 0 0;
@@ -3339,6 +3415,12 @@ input[type="range"]::-webkit-slider-thumb {
     padding-top: 10px;
     font-family: "Roboto-medium";
   }
+  .our-team .card a:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: white;
+    background-color: #1C0902;
+  }
   .location {
     margin-top: 120px;
     background-color: #EBE6DD;
@@ -3463,6 +3545,12 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .footer .contact-form textarea {
     margin-bottom: 40px;
+  }
+  .footer .contact-form .send:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: white;
+    background-color: #1C0902;
   }
   .footer .additional-infr {
     margin-bottom: 20px;
@@ -3686,13 +3774,11 @@ input[type="range"]::-webkit-slider-thumb {
     font-family: "Roboto-regularnormal";
     font-size: 18px;
   }
-  .our-latest-semons .sermons-details .sermons-inner .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: c;
-        -ms-flex-pack: c;
-            justify-content: c;
+  .our-latest-semons .sermons-details .sermons-inner .btn:hover {
+    -webkit-transition: 0s;
+    transition: 0s;
+    color: #c1c1c1;
+    background: black;
   }
   .latest-semons {
     margin-bottom: 116px;
@@ -4612,7 +4698,7 @@ input[type="range"]::-webkit-slider-thumb {
     top: 1%;
   }
   .head .nav.active {
-    width: 220px;
+    width: 280px;
   }
   .head .nav ul {
     position: absolute;
@@ -4622,8 +4708,9 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
   }
   .head .nav ul li {
-    margin-top: 20px;
+    margin-top: 10px;
     padding-left: 38px;
+    margin-bottom: 20px;
   }
   .head .nav ul li a {
     color: black;
@@ -6205,6 +6292,30 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 16px;
     margin-top: 10px;
     display: block;
+  }
+}
+
+@media (width: 568px) {
+  .head .nav.active {
+    width: 240px;
+  }
+  .head .nav ul {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%;
+  }
+  .head .nav ul li {
+    margin-top: 0;
+    padding-left: 38px;
+    margin-bottom: 10px;
+  }
+  .head .nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Roboto-medium";
   }
 }
 
