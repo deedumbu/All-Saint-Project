@@ -7189,10 +7189,6 @@ input[type="range"]::-webkit-slider-thumb {
     text-align: center;
     margin-bottom: 50px;
   }
-  .comingup-events img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .comingup-events .event-img {
     -o-object-fit: cover;
        object-fit: cover;
@@ -7200,10 +7196,11 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
     margin: auto;
     margin-bottom: 10%;
+    margin-left: -36px;
   }
   .comingup-events .event-inner1 {
     margin-top: 0;
-    margin-left: 48px;
+    margin-left: 30px;
   }
   .comingup-events .event-inner1 h3 {
     margin-bottom: 18px;
@@ -8595,10 +8592,6 @@ input[type="range"]::-webkit-slider-thumb {
     text-align: center;
     margin-bottom: 50px;
   }
-  .comingup-events img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .comingup-events .event-img {
     -o-object-fit: cover;
        object-fit: cover;
@@ -8606,6 +8599,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
     margin: auto;
     margin-bottom: 10%;
+    margin-left: -37px;
   }
   .comingup-events .event-inner1 {
     margin-top: 0;
