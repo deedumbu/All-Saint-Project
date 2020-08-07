@@ -89,22 +89,6 @@ overflow-x: hidden;
 	color:$black;
   }
   
-//   header {
-// 	  z-index: 9999;
-// 	position: fixed;
-// 	top: 0;
-// 	left: 0;
-	//  height: 3em;
-	//  width: 100%;
-	// background-color: #EEE;
-	// box-sizing: border-box;
-	// padding: 12px 18px;
-	// box-shadow: 0px 4px 7px #777;
-// 	transition: background-color 0.4s ease-out;
-//   }
-
-
-
 
 
 button:focus{outline:none;}
@@ -1145,14 +1129,16 @@ transition: all .8s ease-in-out;top: 19%;left:50%;	transform: translate(-50%, 50
 	}
 	h2{font-size: 35px;margin-top:29px;margin-bottom: 36px;font-family: $medium;}
 .acc{background-color:white;margin-bottom: 50px;padding:34px 30px 42px 28px; 
- .accordion_head { cursor: pointer;font-size:19px;padding-left: 0;
+ .accordion_head { font-size:19px;padding-left: 0;}
+ .accordion_body {display: block!important;display:content;
+	p {height:100%;
+		margin-right: 0;font-size: 17px;margin-top: 29px;line-height: 1.3;
+	}
  }
- .accordion_body p {
-	 margin-right: 10px;font-size: 17px;margin-top: 29px;line-height: 1.3;
- }
+ 
 
 
-.plusminus {
+.plusminus {display: none;
  float:right;
 font-size: 24px;position: relative;top:-6px;
 
@@ -1259,13 +1245,13 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
    // start-location-section
    .location{margin-top:120px;background-color: #EBE6DD;padding:0 0 60px 0;
 	   h3{padding-top: 76px;font-size: 26px;padding-bottom: 20px;padding-left: 32px;}
-	   h2{font-size: 33px;font-family: $medium;margin-bottom: 30px;padding-left:32px;}
+	   h2{font-size: 33px;margin-bottom: 30px;padding-left:32px;}
 	   .location-img{display: none;}
 	   .location-details{
-		   .location-heading{font-size: 30px;font-family: $medium;margin-top: 24px;margin-bottom: 20px;padding-left: 32px;}
-		   .location-infr{font-size: 16px;font-family: $regular;margin-bottom: 30px;line-height: 1.3;word-spacing: 6px;margin-right: 0;padding-left: 32px;padding-right: 10px;}
-		   p{font-size: 12px;font-family: $medium;line-height: 1.3;padding-left: 32px;}
-		   .digits{margin: 25px 0 25px 0;font-family: $medium;}
+		   .location-heading{font-size: 30px;margin-top: 24px;margin-bottom: 20px;padding-left: 32px;}
+		   .location-infr{font-size: 16px;margin-bottom: 30px;line-height: 1.3;word-spacing: 6px;margin-right: 0;padding-left: 32px;padding-right: 10px;}
+		   p{font-size: 12px;line-height: 1.3;padding-left: 32px;}
+		   .digits{margin: 25px 0 25px 0;}
 	   }
 	   .map{padding-bottom: 35px;
 		   
@@ -1298,7 +1284,7 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 	 }
 }
    .additional-infr{margin-bottom:20px;margin-left:0;display: flex;flex-direction: column;justify-content: center;align-self: center;align-items: center;
-	   .additional-infr-heading{font-size: 24px;font-family: $medium;margin-bottom: 20px;display: flex;justify-content: center;;margin-top: 70px;}
+	   .additional-infr-heading{font-size: 24px;margin-bottom: 20px;display: flex;justify-content: center;;margin-top: 70px;}
 		 .links{font-size: 18px;display:flex;justify-content:center;margin-bottom: 30px;
 		    a{
 				&:hover{transition: 0s;font-family: $regular;}
@@ -1333,8 +1319,8 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 			img{height: 406px;}
 
 			.children-heading{margin-bottom: 6px;font-size: 21px;}
-			p{font-family: $regular;font-size: 18px;}
-			ol{font-size: 18px!important;margin: 15px 18px;font-family: $regular;}
+			p{font-size: 18px;}
+			ol{font-size: 18px!important;margin: 15px 18px;}
 			}
 			// activities-for-children
 			.activities-for-children{margin-bottom: 137px;
@@ -1369,7 +1355,7 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 
 
 .our-latest-semons{margin: 104px 165px 153px 165px;
-		.sermon-heading{margin-bottom: 62px;font-family: $medium;font-size: 48px;}
+		.sermon-heading{margin-bottom: 62px;font-size: 48px;}
 			.sermons-details{ display: flex;
 				flex-direction: column-reverse;
 					.sermons-img{
@@ -1381,10 +1367,10 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 			img{width: 400px;}
 		.sermons-inner{margin-left: 0;
 					
-				.sermon-heading2{font-family: $bold;font-size: 48px;margin-bottom: 20px;}
-				.sermon-infr{font-size: 18px;font-family: $regular;line-height: 1.3;margin-right: 10px;margin-bottom: 24px;}
-						 .date{font-size: 18px;font-family:$regular;margin-top:24px;
-							 span{color: $heading;font-family:$regular;font-size: 18px;}
+				.sermon-heading2{font-size: 48px;margin-bottom: 20px;}
+				.sermon-infr{font-size: 18px;line-height: 1.3;margin-right: 10px;margin-bottom: 24px;}
+						 .date{font-size: 18px;margin-top:24px;
+							 span{font-size: 18px;}
 						 }
 						
 						
@@ -1404,15 +1390,15 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 
 
 				.latest-semons{margin-bottom: 116px;
-					h3{margin: 91px 0 30px 0;text-align: center;font-size: 24px;color: $heading;}
+					h3{margin: 91px 0 30px 0;text-align: center;font-size: 24px;}
 					h2{margin-bottom: 72px;font-size: 48px;text-align: center;} 
 					img{margin-bottom: 38px;}
 					p{margin-bottom: 16px;font-size: 34px;
 			  
 				  }
 				  .date{font-size: 21px;color: $heading;}
-				  .sermon-details{font-size: 18px; font-family: $regular;margin-bottom: 74px;}
-				  .see-earlier{text-decoration: none;text-align: center;font-size: 16px;color:$heading;align-self:center;display:flex;justify-content:center;
+				  .sermon-details{font-size: 18px;margin-bottom: 74px;}
+				  .see-earlier{text-decoration: none;text-align: center;font-size: 16px;;align-self:center;display:flex;justify-content:center;
 				
 				
 				}
@@ -1426,7 +1412,7 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 //   church-funds
 			.church-funds{
 				.church-funds-inner{text-align: center;margin: 88px 72px 0 72px;
-				h3{font-size: 24px;color: $heading;margin-bottom: 36px;}
+				h3{font-size: 24px;margin-bottom: 36px;}
 				h2{font-size: 48px;margin-bottom: 39px;}
 				p{font-size: 22px;line-height: 30px;margin:39px 100px 51px 100px;}
 				img{width: 100%;}
@@ -1442,7 +1428,7 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 
 			}
 			.raised-funds-details{display: flex;justify-content: space-between;
-			p{margin-top: 33px;font-size: 21px;font-family: $regular;color: #1C0902;}
+			p{margin-top: 33px;font-size: 21px;color: #1C0902;}
 			}
 		
 		}
@@ -1451,7 +1437,7 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 
 			.message{ 
 			h2{font-size: 48px;margin:116px 0 51px 0;text-align: center;}
-			p{font-size: 22px ;font-family:$regular;line-height: 32px;text-align: center; margin: 0 75px 51px 72px ;}
+			p{font-size: 22px ;line-height: 32px;text-align: center; margin: 0 75px 51px 72px ;}
 			}
 
 // eventspage

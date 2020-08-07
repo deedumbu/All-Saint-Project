@@ -31,14 +31,8 @@ function menuTog(e){
     nav.classList.toggle('active')
 }
 
-// window.onscroll = () => {
-//   const header = document.querySelector('#nav-bar');
-//   if(this.scrollY <= 10) header.className = ''; else header.className = 'scroll';
-// };
 
-
-
-
+// small screen nav
       $(document).ready(function(){
          var mediaBreakPoint = '(max-width:667px)';
         
@@ -62,7 +56,7 @@ function menuTog(e){
 
       });
 
-
+// desktop nav
       $(document).ready(function(){
         var mediaBreakPoint = '(min-width:768px)';
        
@@ -93,52 +87,43 @@ function menuTog(e){
      });
 
 
-    //   $(document).ready(function(){
-    //     var mediaBreakPoint = '(max-width:667px)';
-       
+       $(document).ready(function(){
+         var mediaBreakPoint = '(min-width:768px)';
 
-    //      if (window.matchMedia(mediaBreakPoint).matches) {
-    //      $(".head").hide();
-    //      $(function (){
-    //        $(window).scroll(function (){
-    //          if ($(this).scrollTop() >100){
-    //            $('.head').fadeIn();
-   
-    //          } else{
-    //            $('.head').fadeOut();
+         if (window.matchMedia(mediaBreakPoint).matches) {
+         $(".accordion_head").click(function () {
+          if ($('.accordion_body').is(':visible')) {
+              $(".accordion_body").slideUp(200);
+              $(".plusminus").text('+');
+          }
+          if ($(this).next(".accordion_body").is(':visible')) {
+              $(this).next(".accordion_body").slideUp(200);
+              $(this).children(".plusminus").text('+')
+              // $(this).children(".plusminus").text('+').css("transform","translateY(0)");
+          } else {
+               $(this).next(".accordion_body").slideDown(200);
+              //  $(".plusminus").addClass(".acc-size");
+              // $(this).children(".plusminus").text('-');
+               $(this).children(".plusminus").text('__')
+              
              
-    //          }
-    //        });
-    //      });
-    //     }
+          }
+      });
+
+    
+      
+        }
 
     
 
-    //  });
+     });
 
 
 
 
   
     //accordion
-    $(".accordion_head").click(function () {
-        if ($('.accordion_body').is(':visible')) {
-            $(".accordion_body").slideUp(200);
-            $(".plusminus").text('+');
-        }
-        if ($(this).next(".accordion_body").is(':visible')) {
-            $(this).next(".accordion_body").slideUp(200);
-            $(this).children(".plusminus").text('+')
-            // $(this).children(".plusminus").text('+').css("transform","translateY(0)");
-        } else {
-             $(this).next(".accordion_body").slideDown(200);
-            //  $(".plusminus").addClass(".acc-size");
-            // $(this).children(".plusminus").text('-');
-             $(this).children(".plusminus").text('__')
-            
-           
-        }
-    });
+  
 
    
     

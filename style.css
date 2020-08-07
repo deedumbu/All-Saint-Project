@@ -3125,17 +3125,22 @@ input[type="range"]::-webkit-slider-thumb {
     padding: 34px 30px 42px 28px;
   }
   .notices .acc .accordion_head {
-    cursor: pointer;
     font-size: 19px;
     padding-left: 0;
   }
+  .notices .acc .accordion_body {
+    display: block !important;
+    display: content;
+  }
   .notices .acc .accordion_body p {
-    margin-right: 10px;
+    height: 100%;
+    margin-right: 0;
     font-size: 17px;
     margin-top: 29px;
     line-height: 1.3;
   }
   .notices .acc .plusminus {
+    display: none;
     float: right;
     font-size: 24px;
     position: relative;
@@ -3388,7 +3393,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .location h2 {
     font-size: 33px;
-    font-family: "Roboto-medium";
     margin-bottom: 30px;
     padding-left: 32px;
   }
@@ -3397,14 +3401,12 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .location .location-details .location-heading {
     font-size: 30px;
-    font-family: "Roboto-medium";
     margin-top: 24px;
     margin-bottom: 20px;
     padding-left: 32px;
   }
   .location .location-details .location-infr {
     font-size: 16px;
-    font-family: "Roboto-regularnormal";
     margin-bottom: 30px;
     line-height: 1.3;
     word-spacing: 6px;
@@ -3414,13 +3416,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .location .location-details p {
     font-size: 12px;
-    font-family: "Roboto-medium";
     line-height: 1.3;
     padding-left: 32px;
   }
   .location .location-details .digits {
     margin: 25px 0 25px 0;
-    font-family: "Roboto-medium";
   }
   .location .map {
     padding-bottom: 35px;
@@ -3525,7 +3525,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .footer .additional-infr .additional-infr-heading {
     font-size: 24px;
-    font-family: "Roboto-medium";
     margin-bottom: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3604,13 +3603,11 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 21px;
   }
   .about-children-church p {
-    font-family: "Roboto-regularnormal";
     font-size: 18px;
   }
   .about-children-church ol {
     font-size: 18px !important;
     margin: 15px 18px;
-    font-family: "Roboto-regularnormal";
   }
   .activities-for-children {
     margin-bottom: 137px;
@@ -3684,7 +3681,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .our-latest-semons .sermon-heading {
     margin-bottom: 62px;
-    font-family: "Roboto-medium";
     font-size: 48px;
   }
   .our-latest-semons .sermons-details {
@@ -3710,25 +3706,20 @@ input[type="range"]::-webkit-slider-thumb {
     margin-left: 0;
   }
   .our-latest-semons .sermons-details .sermons-inner .sermon-heading2 {
-    font-family: "Roboto-bold";
     font-size: 48px;
     margin-bottom: 20px;
   }
   .our-latest-semons .sermons-details .sermons-inner .sermon-infr {
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     line-height: 1.3;
     margin-right: 10px;
     margin-bottom: 24px;
   }
   .our-latest-semons .sermons-details .sermons-inner .date {
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     margin-top: 24px;
   }
   .our-latest-semons .sermons-details .sermons-inner .date span {
-    color: #C46508;
-    font-family: "Roboto-regularnormal";
     font-size: 18px;
   }
   .our-latest-semons .sermons-details .sermons-inner .btn:hover {
@@ -3744,7 +3735,6 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 91px 0 30px 0;
     text-align: center;
     font-size: 24px;
-    color: #C46508;
   }
   .latest-semons h2 {
     margin-bottom: 72px;
@@ -3764,14 +3754,12 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .latest-semons .sermon-details {
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     margin-bottom: 74px;
   }
   .latest-semons .see-earlier {
     text-decoration: none;
     text-align: center;
     font-size: 16px;
-    color: #C46508;
     -ms-flex-item-align: center;
         align-self: center;
     display: -webkit-box;
@@ -3795,7 +3783,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .church-funds .church-funds-inner h3 {
     font-size: 24px;
-    color: #C46508;
     margin-bottom: 36px;
   }
   .church-funds .church-funds-inner h2 {
@@ -3849,7 +3836,6 @@ input[type="range"]::-webkit-slider-thumb {
   .church-funds .raised-funds .raised-funds-details p {
     margin-top: 33px;
     font-size: 21px;
-    font-family: "Roboto-regularnormal";
     color: #1C0902;
   }
   .church-funds .funds-btn {
@@ -3867,7 +3853,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .message p {
     font-size: 22px;
-    font-family: "Roboto-regularnormal";
     line-height: 32px;
     text-align: center;
     margin: 0 75px 51px 72px;
