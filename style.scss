@@ -913,7 +913,7 @@ span{display: block;line-height: 1.3;font-family: $Futura;}
 			}
 			}
 .nav{ position: fixed;top: 0; left: -40%; width: 40%;height: 100vh;transition: 0.5s;}
-	.nav.active{position: fixed;top: 0;left: 0;width: 240px;height: 100vh;background:$pink;transition: 0.5s;z-index: 999;}
+	.nav.active{position: fixed;top: 0;left: 0;width: 240px;height: 100vh;z-index: 999;}
 	 .nav ul{ position: absolute; top: 45%; transform: translateY(-50%); width: 100%;left:10px;
 		   li {margin-top: 32px;padding-left:0;
 		  a{color: black;text-decoration: none;font-size: 15px;}
@@ -964,7 +964,7 @@ span{display: block;line-height: 1.3;font-family: $Futura;}
 
 		.about-img2{width: 300px;height: 240px;margin-bottom:25px;
 			.overlay{ 
-				a{position:absolute;top: 40%;left: 45%;transform: translate(-50%, 50%);font-size: 20px;color: $white;font-family: $bold;z-index: 2;width:100%;
+				a{position:absolute;top: 40%;left: 45%;transform: translate(-50%, 50%);font-size: 20px;z-index: 2;width:100%;
 				
 			&:hover{transition: 0s;color: white;}
 			}
@@ -974,7 +974,7 @@ span{display: block;line-height: 1.3;font-family: $Futura;}
 		
         .about-img3{width: 300px;height: 240px;margin-bottom:25px;
 		.overlay{ 
-			a{top: 40%;left: 48%;transform: translate(-50%, 50%);font-size: 20px;color: $white;font-family: $bold;z-index: 2;width: 100%;width:100%;
+			a{top: 40%;left: 48%;transform: translate(-50%, 50%);font-size: 20px;z-index: 2;width: 100%;width:100%;
 			
 			&:hover{transition: 0s;color: white;}
 		}
@@ -984,17 +984,17 @@ span{display: block;line-height: 1.3;font-family: $Futura;}
 
 
 .about-us{text-align: center;margin:0 0 -21px 0;
-   h3{font-size: 24px;color: $heading;font-weight: $regular;margin-bottom: 20px;margin-top: 47px;}
-   h2{font-size: 26px;margin-bottom: 25px;font-family: $regular;}
-   p{font-size: 17px;font-family: $regular;text-align: center;display: flex; justify-content:center;}
-   .middle{font-family: $regular;margin: 0 0 20px 0;display: flex; justify-content:center;margin: 30px 8px;line-height: 1.3;font-size: 17px;}
+   h3{font-size: 24px;margin-bottom: 20px;margin-top: 47px;}
+   h2{font-size: 26px;margin-bottom: 25px;}
+   p{font-size: 17px;text-align: center;display: flex; justify-content:center;}
+   .middle{margin: 0 0 20px 0;display: flex; justify-content:center;margin: 30px 8px;line-height: 1.3;font-size: 17px;}
 }
 
 
 
 // meetings
 .meetings{margin: auto;
-	h2{margin: 84px 0 20px 0;text-align: center;font-size: 24px;color: $heading;}
+	h2{margin: 84px 0 20px 0;text-align: center;font-size: 24px;}
 	.meeting{display: flex;justify-content:center;flex-direction:column;
 	img{height: 438px;object-fit: cover;display: none;}
 	.meeting-ifr1{margin:0 15px;
@@ -1050,7 +1050,6 @@ span{display: block;line-height: 1.3;font-family: $Futura;}
 	
 	}
 	}
-	.fa-play{opacity: 1;}
 }
 	
 	video:-webkit-full-screen + #video-controls {position: relative;
@@ -1097,7 +1096,7 @@ transition: all .8s ease-in-out;top: 19%;left:50%;	transform: translate(-50%, 50
 	.events-infr{margin-left: 28px;
 		.event-day{font-size: 18px;margin-bottom:15px;}
 		.event-category{margin:0 0 12px 0;font-size: 16px;width: 100%;}
-		.event-details{font-size: 14px;line-height: 1.2;margin-bottom: 15px;font-family: $regular;margin-right:10%;}
+		.event-details{font-size: 14px;line-height: 1.2;margin-bottom: 15px;margin-right:10%;}
 		.event-date{font-size:14px;margin-top: 10px;}
 	            }
 	.event-img-first{margin-bottom: 54px;object-fit: cover;}
@@ -1119,7 +1118,7 @@ transition: all .8s ease-in-out;top: 19%;left:50%;	transform: translate(-50%, 50
 	}
 	.service-time{margin-bottom: 16px;margin-top: 60px;margin-left: 10px;font-size: 20px;}
 	.sunday-time-table{margin-bottom: 24px;
-		.fello-day{color: $heading;margin-right:30px;font-size:20px;margin-left:-10px;
+		.fello-day{margin-right:30px;font-size:20px;margin-left:-10px;
 		span{color: $black;}
 		}
 		p{font-size: 16px;margin-right: 10%;}
@@ -1140,22 +1139,22 @@ transition: all .8s ease-in-out;top: 19%;left:50%;	transform: translate(-50%, 50
 
 
 // start-notices-section
-.notices{background-color: #8DDED2;padding: 80px 20px 50px 20px;
-	h3{	color: $heading;font-size: 24px;font-family: $medium;
+.notices{padding: 80px 20px 50px 20px;
+	h3{font-size: 24px;
 		&:hover{transition: 0s;color: $heading;}
 	}
 	h2{font-size: 35px;margin-top:29px;margin-bottom: 36px;font-family: $medium;}
 .acc{background-color:white;margin-bottom: 50px;padding:34px 30px 42px 28px; 
- .accordion_head { cursor: pointer;font-size:19px;font-family:$medium;padding-left: 0;
+ .accordion_head { cursor: pointer;font-size:19px;padding-left: 0;
  }
  .accordion_body p {
-	 margin-right: 10px;font-size: 17px;font-family: $regular;margin-top: 29px;line-height: 1.3;
+	 margin-right: 10px;font-size: 17px;margin-top: 29px;line-height: 1.3;
  }
 
 
 .plusminus {
  float:right;
-font-size: 24px;font-family: $thin;position: relative;top:-6px;
+font-size: 24px;position: relative;top:-6px;
 
 }
    
@@ -1170,13 +1169,13 @@ font-size: 24px;font-family: $thin;position: relative;top:-6px;
 // start-latest-sermons-section
 .latest-semons{margin-bottom: 50px!important;text-align:center;
 	.fas{position: absolute;top:17%;padding:12px;border-radius: 50%;left: 50%;color: white;}
-	  h3{margin: 91px 0 15px 0!important;text-align: center;font-size: 24px;color: $heading;
+	  h3{margin: 91px 0 15px 0!important;text-align: center;font-size: 24px;
 	
 		&:hover{transition: 0s;color: $heading!important;}
 	}
 	  h2{font-size: 30px!important;text-align: center;margin-bottom: 0!important;} 
 	  .latest-s-header{font-size: 30px;}
-	.date{font-size: 21px;color: $heading;margin-bottom: 0!important;padding-top: 0!important;}
+	.date{font-size: 21px;margin-bottom: 0!important;padding-top: 0!important;}
 }
 // end-latest-sermons-section
 
@@ -1184,12 +1183,12 @@ font-size: 24px;font-family: $thin;position: relative;top:-6px;
 // start-donation-section
 .donations{display: flex;justify-content:center;margin-bottom:125px;
 	img{width: 100%;height: 700px;display: none;}
-.donation-inner{width:100%;height: 640px;background-color: $pink;padding-left:30px;
-h3{padding-top: 80px;font-size: 24px;color: $heading;font-family: $medium;}
-h2{margin: 17px 0 24px 0;font-size: 35px;font-family: $medium;}
+.donation-inner{width:100%;height: 640px;padding-left:30px;
+h3{padding-top: 80px;font-size: 24px;}
+h2{margin: 17px 0 24px 0;font-size: 35px;}
 .donate-infr1{padding-bottom: 30px;padding-right:10px;line-height: 1.3;font-size: 18px;}
 .donate-inf2{padding-right:30px;line-height: 1.3;font-size: 18px;margin-bottom: 52px;}
-.btn{text-decoration: none;color: white;background-color: $btncolor;font-weight: $medium;display: flex;justify-content: center;align-items: center;width: 263px;height: 55px;font-size: 22px;
+.btn{text-decoration: none;display: flex;justify-content: center;align-items: center;width: 263px;height: 55px;font-size: 22px;
 
 	&:hover{transition: 0s;color: white;background: $blackdark;border: none;outline: 0;}
 }
@@ -1205,30 +1204,30 @@ h2{margin: 17px 0 24px 0;font-size: 35px;font-family: $medium;}
    
 	.payments-inner{@include flex();
 	.snap-details{margin-left: 0;margin-bottom:1px;
-		p{line-height: 1.3;font-size: 12px;font-family: $futurabold;}
-		.snap-header{margin-bottom: 12px;font-family: $bold}
-	   span{display: block;font-size: 12px;font-family: $futurabold;}
+		p{line-height: 1.3;font-size: 12px;}
+		.snap-header{margin-bottom: 12px;}
+	   span{display: block;font-size: 12px;}
 		.middle{margin-bottom: 12px;line-height: 1.3;}
    
 	}
    
 	}
-	.banking-infr{font-size: 12px;font-family: $Futura;margin-bottom:25px;
+	.banking-infr{font-size: 12px;margin-bottom:25px;
    span{display: block;}
 	}
 	.banking-information{ padding-left: 0;margin-top:49px;
    
-   .banking-head{margin-bottom:20px;font-size: 12px;font-family: $bold;}
+   .banking-head{margin-bottom:20px;font-size: 12px;}
    .bank-details {@include spacebtwn();
    .bank-type{
-		p{font-family: $futurabold;line-height: 1.3;font-size: 12px;}
+		p{line-height: 1.3;font-size: 12px;}
 	}
 	
 	.number{
-		   p{font-family: $futurabold;line-height: 17px;font-size: 12px;}
+		   p{line-height: 17px;font-size: 12px;}
 		}
    }
-	.PBO-number{margin-top: 30px;font-family: $futurabold;font-size: 12px;margin-bottom: 20%;}
+	.PBO-number{margin-top: 30px;font-size: 12px;margin-bottom: 20%;}
    
 	}
    
@@ -1244,10 +1243,10 @@ h2{margin: 17px 0 24px 0;font-size: 35px;font-family: $medium;}
    .our-team{display: flex;justify-content:center;margin-top:120px;
 	   img{display: none;}
 	   .card{padding-left:30px;height: 640px;
-		   h3{padding-top: 87px;font-size: 24px;color: $heading;font-family: $medium;}
-		   h2{margin: 17px 0 24px 0;font-size: 35px;font-family: $medium;}
-		.donate-infr1{padding-bottom: 30px;line-height: 1.3;font-size: 18px;font-family: $regular;padding-right: 30px;}
-		 .donate-inf2{line-height: 1.3;font-size: 18px;margin-bottom: 50px;font-family: $regular;padding-right: 30px;}
+		   h3{padding-top: 87px;font-size: 24px;}
+		   h2{margin: 17px 0 24px 0;font-size: 35px;}
+		.donate-infr1{padding-bottom: 30px;line-height: 1.3;font-size: 18px;padding-right: 30px;}
+		 .donate-inf2{line-height: 1.3;font-size: 18px;margin-bottom: 50px;padding-right: 30px;}
 		   a{margin-top: 10x;text-decoration: none;color: white;background-color: $btncolor;display:flex;justify-content: center;width: 263px;height: 55px;font-size: 22px; padding-top: 10px;font-family: $medium;
 		   &:hover{transition: 0s;color: white;background-color: $blackdark;}
 	   }
@@ -1259,7 +1258,7 @@ h2{margin: 17px 0 24px 0;font-size: 35px;font-family: $medium;}
    
    // start-location-section
    .location{margin-top:120px;background-color: #EBE6DD;padding:0 0 60px 0;
-	   h3{padding-top: 76px;font-size: 26px;font-family: $medium;color: $heading;padding-bottom: 20px;padding-left: 32px;}
+	   h3{padding-top: 76px;font-size: 26px;padding-bottom: 20px;padding-left: 32px;}
 	   h2{font-size: 33px;font-family: $medium;margin-bottom: 30px;padding-left:32px;}
 	   .location-img{display: none;}
 	   .location-details{
@@ -1301,11 +1300,13 @@ h2{margin: 17px 0 24px 0;font-size: 35px;font-family: $medium;}
    .additional-infr{margin-bottom:20px;margin-left:0;display: flex;flex-direction: column;justify-content: center;align-self: center;align-items: center;
 	   .additional-infr-heading{font-size: 24px;font-family: $medium;margin-bottom: 20px;display: flex;justify-content: center;;margin-top: 70px;}
 		 .links{font-size: 18px;display:flex;justify-content:center;margin-bottom: 30px;
-		
+		    a{
+				&:hover{transition: 0s;font-family: $regular;}
+			}
 			
 	   }
 	   .send {text-decoration: none;color: white;background-color: $btncolor;height: 40px;width: 200px;font-size: 20px;font-family: $medium;border: none;position: absolute;bottom: 95%;
-	// &:hover{}
+	
 	 }
    }
    
@@ -2268,13 +2269,13 @@ transition: all .8s ease-in-out;top: 10%;left:50%;color: white;border: 8px solid
 
 	.event-inner1{margin-top:0;margin-left:48px;
 		h3{margin-bottom: 15px;font-family: $medium;font-size: 25px;}
-	.event-date{margin-top:18px;margin-bottom: 10px;font-family: $regular;font-size: 18px;}
+	.event-date{margin-top:18px;margin-bottom: 10px;font-family: $regular;font-size: 16px;}
 	.event-heading{font-size: 18px;font-family: $regular;}
-	.event-time{margin-bottom: 15px;font-size: 18px;font-family: $regular;}
-	.direction{font-size: 17px;font-family:$regular;
+	.event-time{margin-bottom: 15px;font-size: 16px;font-family: $regular;}
+	.direction{font-size: 16px;font-family:$regular;
 		span{display: block;}
 	}
-	.event-infr{margin-top: 15px;font-size: 16px;margin-right: 0;line-height: 1.2;}
+	.event-infr{margin-top: 15px;font-size: 15px;margin-right: 0;line-height: 1.2;}
 	 
 	}
 }
@@ -2283,8 +2284,8 @@ transition: all .8s ease-in-out;top: 10%;left:50%;color: white;border: 8px solid
 	
 
 	.coming-up-second{@include flex();margin:60px 30px 0 30px;
-		.events-inner2{ 
-	img{width: 150px;height: 203px;object-fit: cover;}
+		.events-inner2{ display: flex;justify-content:center; place-content: center;flex-direction:row;
+	img{max-width: 100%;height: 203px;object-fit: contain;}
 	.event-details{margin-left:25px;
 	 h3{font-size: 15px;margin-bottom: 15px;}
 	 .day{font-size: 14px;margin-bottom: 10px;}
