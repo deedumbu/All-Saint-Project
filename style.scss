@@ -92,12 +92,13 @@ overflow-x: hidden;
 
 
 button:focus{outline:none;}
+a:focus{outline:none;}
 
 
  .head{z-index: 200;    position: relative;top: 34px;display: flex;flex-direction: row; width: 100%;background-color: transparent;
 
 	  .nav-contact{ display: flex;width:100%;justify-content:space-between;position:fixed;
-		// background:$heading;top:0;padding:2% 0%;
+	
 			.call-us {color:white;z-index: 8;display: flex;font-size: 18px;margin-right: 30px;line-height: 1.9;font-family: $regular;
 			&:hover{color: $heading;transition: all 0.2s;}
 			}
@@ -543,9 +544,9 @@ span{display: block;line-height: 1.3;font-family: $Futura;}
 	p{font-size: 24px;font-family: $medium;margin-left:20px;}
 	 input:focus{outline:0;}
 	 textarea:focus{outline:0;}
-    input[type="text"]{font-size: 15px;color: #F0F0F0;width: 100%;height:45px;border: 1px solid #F0F0F0;margin-top:25px;margin-bottom: 20px;padding-left: 15px;border: 1px solid #F0F0F0;font-family: $regular;}
-     input[type="email"]{font-size: 15px;color: #F0F0F0;width: 100%;height: 45px;border: 1px solid #F0F0F0;margin-bottom: 20px;padding-left: 15px;border: 1px solid #F0F0F0;font-family: $regular;}
-    textarea{width: 100%;height: 70px;border: 1px solid #F0F0F0;margin-bottom: 20px;color: #F0F0F0;font-size: 15px;padding: 15px 0 0 15px;border: 1px solid #F0F0F0;font-family: $regular;}
+    input[type="text"]{font-size: 15px;color:black;width: 100%;height:45px;border: 1px solid #F0F0F0;margin-top:25px;margin-bottom: 20px;padding-left: 15px;border: 1px solid #F0F0F0;font-family: $regular;}
+     input[type="email"]{font-size: 15px;color:black;width: 100%;height: 45px;border: 1px solid #F0F0F0;margin-bottom: 20px;padding-left: 15px;border: 1px solid #F0F0F0;font-family: $regular;}
+    textarea{width: 100%;height: 70px;border: 1px solid #F0F0F0;margin-bottom: 20px;color: black;font-size: 15px;padding: 15px 0 0 15px;border: 1px solid #F0F0F0;font-family: $regular;}
 	.send {text-decoration: none;color: white;background-color: $btncolor;height: 45px;width: 200px;font-size: 20px;font-family: $medium;border: none;
 		&:hover{background: $heading;color: $blackdark;	transition: all 0.2s;}
 	}
@@ -697,7 +698,12 @@ span{display: block;line-height: 1.3;font-family: $Futura;}
 		
 		}
 	.funds-btn {text-decoration: none;color: #EBE6DD;font-size: 24px;padding: 12px 20px;background-color: $blackdark;margin-left: 72px;font-family: $medium;}
-			}
+		a{
+			&:hover{background: $heading;color: black;transition: all 0.2s;}
+		}	
+
+
+}
 
 			.message{ 
 			h2{font-size: 48px;margin:116px 0 51px 0;text-align: center;font-family: $medium;}
@@ -1127,8 +1133,8 @@ transition: all .8s ease-in-out;top: 19%;left:50%;	transform: translate(-50%, 50
 	h3{font-size: 24px;
 		&:hover{transition: 0s;color: $heading;}
 	}
-	h2{font-size: 35px;margin-top:29px;margin-bottom: 36px;font-family: $medium;}
-.acc{background-color:white;margin-bottom: 50px;padding:34px 30px 42px 28px; 
+	h2{font-size: 35px;margin-top:29px;margin-bottom: 36px;}
+.acc{margin-bottom: 50px;padding:34px 30px 42px 28px; 
  .accordion_head { font-size:19px;padding-left: 0;}
  .accordion_body {display: block!important;display:content;
 	p {height:100%;
@@ -1154,7 +1160,7 @@ font-size: 24px;position: relative;top:-6px;
 
 // start-latest-sermons-section
 .latest-semons{margin-bottom: 50px!important;text-align:center;
-	.fas{position: absolute;top:17%;padding:12px;border-radius: 50%;left: 50%;color: white;}
+	.fas{top:17%;padding:12px;left: 50%;}
 	  h3{margin: 91px 0 15px 0!important;text-align: center;font-size: 24px;
 	
 		&:hover{transition: 0s;color: $heading!important;}
@@ -1243,7 +1249,7 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
    
    
    // start-location-section
-   .location{margin-top:120px;background-color: #EBE6DD;padding:0 0 60px 0;
+   .location{margin-top:120px;padding:0 0 60px 0;
 	   h3{padding-top: 76px;font-size: 26px;padding-bottom: 20px;padding-left: 32px;}
 	   h2{font-size: 33px;margin-bottom: 30px;padding-left:32px;}
 	   .location-img{display: none;}
@@ -1291,7 +1297,7 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 			}
 			
 	   }
-	   .send {text-decoration: none;color: white;background-color: $btncolor;height: 40px;width: 200px;font-size: 20px;font-family: $medium;border: none;position: absolute;bottom: 95%;
+	   .send {height: 40px;width: 200px;font-size: 20px;border: none;position: absolute;bottom: 95%;
 	
 	 }
    }
@@ -1306,8 +1312,8 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 		.children-church-banner{ height: 480px;width: 100%;
 	
 			.banner-inner{@include column();margin-left:71px;
-				p{margin-top: 253px; color: #FFFFFF;font-size: 26px;margin-bottom: 30px;}
-				h1{font-size: 90px;color: #FFFFFF;}
+				p{margin-top: 253px; font-size: 26px;margin-bottom: 30px;}
+				h1{font-size: 90px;}
 			
 			}
 		
@@ -1345,8 +1351,8 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 .sermons-banner{ background-image: linear-gradient(rgba(#010101,0.6), rgba(#010101,0.6)), url('img/sermonsHero.png');background-position: center;background-size: cover;height: 740px;width: 1440px;position: relative;z-index:1;margin-bottom:48px;
 
 		.banner-inner{@include column();margin-left:71px;
-				p{margin-top: 283px; color: #FFFFFF;font-size: 26px;margin-bottom: 30px;}
-					h1{font-size: 90px;color: #FFFFFF;}
+				p{margin-top: 283px;;font-size: 26px;margin-bottom: 30px;}
+					h1{font-size: 90px;}
 				
 				}
 			
@@ -1402,7 +1408,7 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 				
 				
 				}
-				.line{background-color: #1C0902;width:8%; height: 3px;margin-top: 15px;position: absolute;left: 41%;}
+				.line{width:8%; height: 3px;margin-top: 15px;position: absolute;left: 41%;}
 			  }
 			  
 // end-latest-sermons
@@ -1418,9 +1424,9 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 				img{width: 100%;}
 		}
 
-		 .raised-funds{margin: 72px 71px 39px 72px;background-color:#EBE6DD;padding: 109px 48px;
+		 .raised-funds{margin: 72px 71px 39px 72px;padding: 109px 48px;
 
-			.line1{width:100%; height: 1px;background-color:#979797;padding:0 109px;margin-top: 5px;}
+			.line1{width:100%; height: 1px;padding:0 109px;margin-top: 5px;}
 			.line2{background-color: $black;width:80%; height: 3px;bottom:-125%;
 			
 			}
@@ -1428,11 +1434,11 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 
 			}
 			.raised-funds-details{display: flex;justify-content: space-between;
-			p{margin-top: 33px;font-size: 21px;color: #1C0902;}
+			p{margin-top: 33px;font-size: 21px;}
 			}
 		
 		}
-	.funds-btn {text-decoration: none;color: #EBE6DD;font-size: 24;padding: 12px 20px;background-color: $blackdark;margin-left: 72px;}
+	.funds-btn {font-size: 24;padding: 12px 20px;margin-left: 72px;}
 			}
 
 			.message{ 
@@ -1448,8 +1454,8 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 .event-banner{ background-position: center;background-size: cover;height: 500px;
 	
 	.events-banner-inner{@include column();margin-left:30px;
-		p{margin-top: 293px; color: #FFFFFF;font-size: 22px;margin-bottom: 20px;}
-		h1{font-size: 40px;color: #FFFFFF;}
+		p{margin-top: 293px; font-size: 22px;margin-bottom: 20px;}
+		h1{font-size: 40px;}
 	
 	}
 
@@ -1504,9 +1510,9 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 			.about-children-church{margin:100px 20px 0 20px;
 			img{height: 300px;width: 100%;object-fit: cover;margin-bottom: 40px;}
 
-			.children-heading{margin-top: 40px;font-size: 21px;font-family: $bold;}
+			.children-heading{margin-top: 40px;font-size: 21px;}
 			p{font-size: 18px;line-height: 1.3;width: 100%;}
-			ol{font-size: 22px;margin: 15px 50px;font-family: $regular;line-height: 25px;}
+			ol{font-size: 22px;margin: 15px 50px;line-height: 25px;}
 			}
 			// activities-for-children
 			.activities-for-children{margin:40px 10px 80px 10px;text-align: center;
@@ -1534,8 +1540,8 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 	.messy-banner{height: 500px;width: 100%;position: relative;z-index:1;margin-bottom:48px;
 	
 		.banner-inner{@include column();margin-left:30px;text-align:start;
-			p{margin-top: 283px; color: #FFFFFF;font-size: 22px;margin-bottom: 18px;}
-			h1{font-size: 40px;color: #FFFFFF;}
+			p{margin-top: 283px;font-size: 22px;margin-bottom: 18px;}
+			h1{font-size: 40px;}
 		
 		}
 	
@@ -1545,12 +1551,12 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 // about-messy-church
 		.about-messy-church{margin: 0 20px;
 			img{width: 100%;}
-			.heading{margin-top: 100px;font-family: $regular;font-size: 20px;margin: 48px 0 24px 0;}
-			h2{font-size: 35px;font-family: $regular;margin-bottom: 12px;}
-			p{font-size: 18px;font-family: $italic; line-height: 1.4;}
+			.heading{margin-top: 100px;font-size: 20px;margin: 48px 0 24px 0;}
+			h2{font-size: 35px;margin-bottom: 12px;}
+			p{font-size: 18px;line-height: 1.4;}
 
 			.about-messy-details{margin-top: 30px;
-				p{font-size: 18px;font-family: $regular;line-height: 1.4;margin: 22px 12px  0 12px;}
+				p{font-size: 18px;line-height: 1.4;margin: 22px 12px  0 12px;}
 			
 			}
 			
@@ -1563,8 +1569,8 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 		 .test-infr{margin-top: 80px;
 
 			h4{font-size: 24px;margin: 30px 0 12px 0;}
-			.test-details{font-family: $regular;font-size: 18px;line-height: 1.4;margin-bottom: 20px;}
-			.further-details{font-size: 18px;font-family: $medium;line-height: 1.4;}
+			.test-details{font-size: 18px;line-height: 1.4;margin-bottom: 20px;}
+			.further-details{font-size: 18px;line-height: 1.4;}
 		 }
 		}
 
@@ -1635,16 +1641,16 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 	//   church-funds
 			.church-funds{
 				.church-funds-inner{text-align: center;margin: 88px 15px 0 15px;
-				h3{font-size: 24px;color: $heading;margin-bottom: 19px;}
+				h3{font-size: 24px;margin-bottom: 19px;}
 				h2{font-size: 26px;margin-bottom: 17px;}
 				p{   font-size: 18px;line-height: 1.5;margin: 0 2px}
 				img{width: 100%;margin-top: 56px;margin-bottom: 80px;}
 		}
 
-		 .raised-funds{margin:0;background-color:#EBE6DD;padding: 100px 48px;margin-bottom:50px;
+		 .raised-funds{margin:0;padding: 100px 48px;margin-bottom:50px;
 
-			.line1{width:100%; height: 1px;background-color:#979797;padding:0 109px;margin-top: 5px;}
-			.line2{background-color: $black;width:80%; height: 3px;bottom:-125%;
+			.line1{width:100%; height: 1px;padding:0 109px;margin-top: 5px;}
+			.line2{width:80%; height: 3px;bottom:-125%;
 			
 			}
 			.milestone{display: flex;justify-content: flex-end;margin-right: 30px;
@@ -1655,12 +1661,14 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 			}
 		
 		}
-	.funds-btn {display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin: auto;
-		width: 200px;font-size: 20px;}
+	.funds-btn {display: flex;flex-direction: column;justify-content: center;align-items: center;margin: auto;width: 200px;font-size: 20px;}
+		a{
+			&:hover{color:white;background-color: $blackdark;transition: 0s;}
+		   }	  
+		
+	
+
+	
 			}
 
 			.message{ 
@@ -1680,8 +1688,8 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 		// .team-inner{
 	 .t{img{width: 100%;}
 		h3{font-size: 27px;margin:15px 0 15px 0;}
-		.lead-pastor{color: $heading;font-size: 24px;font-size: $regular;}
-		.pastor-infr{font-size: 18px;color: $black;font-family: $regular;margin:15px 0 50px 0;line-height: 20px;}
+		.lead-pastor{font-size: 24px;}
+		.pastor-infr{font-size: 18px;color: $black;margin:15px 0 50px 0;line-height: 20px;}
 
 	}
 	
@@ -1710,10 +1718,10 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 		   .heading{font-size: 25px;margin-bottom: 5px;
 		           em{display:inline;}
 		}
-		   .days{font-size: 14px; font-family: $regular;}
+		   .days{font-size: 14px;}
 		   .name{font-size: 20;margin: 5px 0;}
 		   p{font-size: 14px;
-			   span{display: none;font-size: 14px; font-family: $regular;}
+			   span{display: none;font-size: 14px;}
 		   }
 	   }
 	}
@@ -1752,7 +1760,7 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 		   .heading{font-size: 18px;margin-bottom: 27px;
 		   span{display: block;}
 		   }
-	   .number{font-size: 18px;margin-top:31px;display: block;font-family: $regular;}
+	   .number{font-size: 18px;margin-top:31px;display: block;}
 	   
 		   }
 		   }
@@ -1785,14 +1793,14 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 	.nav.active{width: 280px;}
 	.nav ul{ position: absolute; top: 28%; transform: translateY(-50%); width: 100%;
 		li {margin-top: 10px;padding-left:38px;margin-bottom:20px;
-	   a{color: black;text-decoration: none;font-size: 15px;font-family: $medium;}
+	   a{font-size: 15px;}
 	   }
 		 }
-		 .call-us{font-size: 16px;position: relative;left: 60%;color: $blackdark;}
+		 .call-us{font-size: 16px;position: relative;left: 60%;}
 		}
 
 		.menuopen{margin-left:6px;margin-top:6px;position:fixed;top:5%;
-			span{display: flex;width: 20px;height: 1px;background-color:white;margin-top: 3px;z-index: 999;
+			span{display: flex;width: 20px;height: 1px;margin-top: 3px;z-index: 999;
 			
 			}
 		
@@ -1809,29 +1817,29 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 			font-size: 18px;margin-bottom: 40px;
 		}
 	}
-	a{padding:15px 15px;text-decoration: none;color: $black;background-color: white;}
+	a{padding:15px 15px;}
 	}
-	.icons{display: none;}
-	.icon{display: none;}
+	// .icons{display: none;}
+	// .icon{display: none;}
 
 
 	.about-all{padding-top: 84px;display: flex;justify-content:space-evenly;
 		 
 		.about-img{width: 200px;height: 200px;background-position:center;background-size:cover;
 		.overlay{ 
-			a{position:absolute;top: 40%;left: 55%;transform: translate(-50%, 50%);font-size: 18px;color: $white;font-family: $bold;z-index: 2;}
+			a{top: 40%;left: 55%;transform: translate(-50%, 50%);font-size: 18px;}
 			}
 		}
 	
 			.about-img2{width: 200px;height: 200px;background-position:center; background-size:cover;
 				.overlay{ 
-					a{position:absolute;top: 40%;left: 65%;transform: translate(-50%, 50%);font-size: 18px;color: $white;font-family: $bold;z-index: 2;width:100%;}
+					a{top: 40%;left: 65%;transform: translate(-50%, 50%);font-size: 18px;width:100%;}
 					}
 				}
 			
 			.about-img3{width: 200px;height: 200px;background-position:center; background-size: cover;
 			.overlay{ 
-				a{position:absolute;top: 40%;left: 50%;transform: translate(-50%, 50%);font-size: 18px;color: $white;font-family: $bold;z-index: 2;}
+				a{top: 40%;left: 50%;transform: translate(-50%, 50%);font-size: 18px;}
 				}
 			}
 		}
@@ -1843,7 +1851,7 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 	.about-img{position: relative;margin:0 8% 5% 8%;
 		img{width: 100%;padding-right: 0;object-fit: cover;}
 		.overlay{ 
-		p{position:absolute;top: 40%;left: 80%;transform: translate(-50%, 50%);font-size: 26px;color: $white;font-family: $bold;width: 100%;}
+		p{position:absolute;top: 40%;left: 80%;transform: translate(-50%, 50%);font-size: 26px;width: 100%;}
 		}
 
 	
@@ -1853,16 +1861,16 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 
 
 .about-us{text-align: center;
-   h3{font-size: 24px;color: $heading;font-weight: $regular;margin-bottom: 20px;font-family: $regular;}
-   h2{font-size: 30px;margin-bottom: 25px;font-family: $regular;}
-   p{margin-bottom: 20px;font-size: 18px;font-family: $regular;text-align: center;}
-   .middle{font-family: $regular;margin: auto;margin-bottom: 20px;}
+   h3{font-size: 24px;margin-bottom: 20px;}
+   h2{font-size: 30px;margin-bottom: 25px;}
+   p{margin-bottom: 20px;font-size: 18px;text-align: center;}
+   .middle{margin: auto;margin-bottom: 20px;}
 }
 
 
 // meetings
 .meetings{
-	h2{margin: 60px 0 20px 0;text-align: center;font-size: 24px;color: $heading;}
+	h2{margin: 60px 0 20px 0;text-align: center;font-size: 24px;}
 	.meeting{display: flex;justify-content:center;flex-direction:row;flex-wrap:wrap;
 
    .meeting-ifr1{ display: flex;margin:0 20px;
@@ -1877,7 +1885,7 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 			span{display: block;padding-bottom: 13px;font-size:22px;}
 		}
 		p{font-size: 22px;line-height: 1.3;}
-			.text{margin-top: 21px;margin-bottom: 39px;font-size: 18px;line-height: 1.3;margin-right: 35px;margin-left: 35px;font-family: $regular;}
+			.text{margin: 21px 35px 39px 35px;font-size: 18px;line-height: 1.3;}
 	
 }
 	.sunset{width: 100%;margin-left:0;margin-top: 35px;display: none;}
@@ -1895,11 +1903,11 @@ h2{margin: 17px 0 24px 0;font-size: 35px;}
 
 	.work-inner{height: 551px;display:flex;order:1;
 		.infr{width:100%;height: 0px;background-color: $pink;padding-left:45px;z-index: 1;
-			h3{padding-top: 65px;font-size: 26px;color: $heading;font-family: $regular;}
-			 h2{margin: 17px 0 10px 0;font-size: 30px;font-family: $medium;}
-	  .donate-inf1{padding-bottom: 18px;padding-right:14px;line-height: 1.3;font-size: 20px;font-family: $regular;}
-	  .donate-inf2{padding-right:15px;line-height: 1.3;font-size: 20px;margin-bottom: 30px;font-family: $regular;}
-			.w-btn{border: none;color: white;background-color: $btncolor;font-size: 22px;display: flex;justify-content: center;align-items:center;width:305px;height: 55px;padding: 15px 0;text-decoration: none;
+			h3{padding-top: 65px;font-size: 26px;}
+			 h2{margin: 17px 0 10px 0;font-size: 30px;}
+	  .donate-inf1{padding-bottom: 18px;padding-right:14px;line-height: 1.3;font-size: 20px;}
+	  .donate-inf2{padding-right:15px;line-height: 1.3;font-size: 20px;margin-bottom: 30px;}
+			.w-btn{font-size: 22px;display: flex;justify-content: center;align-items:center;width:305px;height: 55px;padding: 15px 0;
 			
 			}
 	  .items{
@@ -1984,26 +1992,7 @@ transition: all .8s ease-in-out;top: 10%;left:50%;color: white;border: 8px solid
 
 }
 
-   // start-notices-section
-//    .notices{background-color: #8DDED2;padding: 100px 71px 70px 71px;
-// 	h3{	color: $heading;font-size: 24px;}
-// 	h2{font-size: 35px;margin-top:29px;margin-bottom: 36px;}
-// .acc{background-color:white;margin-bottom: 50px;padding:34px 30px 42px 28px; 
-// 	h4{cursor: pointer;position: relative;font-size:13px;
-// 	  &:after{content: "+";position: absolute;right: -20px;font-size: 35px;top:-90%;}
-// 	  }
-//  .content{display: none;}
-// 	   p{margin-right:0;font-size: 18px;margin-top: 29px;line-height: 1.2;}
- 
-// }
-//  img{display: none;}
-// }
-
-// .acc.active h4{
-//  &:after{content:"";height: 2px;width:20px;top:50%;position: absolute;font-size: 30px;}
-// } 
-
-
+  
 
 
 // start-notices-section
@@ -2011,8 +2000,8 @@ transition: all .8s ease-in-out;top: 10%;left:50%;color: white;border: 8px solid
 	h3{font-size: 24px;
 		&:hover{transition: 0s;color: $heading;}
 	}
-	h2{font-size: 35px;margin-top:29px;margin-bottom: 36px;font-family: $medium;}
-.acc{background-color:white;margin-bottom: 50px;padding:34px 30px 42px 28px; 
+	h2{font-size: 35px;margin-top:29px;margin-bottom: 36px;}
+.acc{margin-bottom: 50px;padding:34px 30px 42px 28px; 
  .accordion_head { font-size:19px;padding-left: 0;}
  .accordion_body {display: block!important;display:content;
 	p {height:100%;
@@ -2038,13 +2027,13 @@ font-size: 24px;position: relative;top:-6px;
 // start-latest-sermons
 .latest-semons{margin-bottom: 75px!important;text-align:center;
 	.fas{position: absolute;top:14%;padding:12px;border-radius: 50%;left: 50%;color: white;font-size: 30px;}
-	  h3{margin: 91px 0 30px 0;text-align: center;font-size: 20px;color: $heading;}
+	  h3{margin: 91px 0 30px 0;text-align: center;font-size: 20px;}
 	  h2{font-size: 30px;margin-bottom: 20px; }
 	  a{font-size: 16px;margin-left: 0;}
 	
 .latest-s-header{font-size:16px;}
 	
-	.date{font-size: 16px;color: $heading;}
+	.date{font-size: 16px;}
 }
 
 
@@ -2052,8 +2041,8 @@ font-size: 24px;position: relative;top:-6px;
 .donations{margin-top: 0;margin-bottom:60px;
 	img{display:none;}
 	.donation-inner{width:100%;height: 500px;padding-left:45px;
-		h3{padding-top: 87px;font-size: 24px;color: $heading;}
-		h2{margin: 17px 0 24px 0;font-size: 35px;font-weight: $medium;}
+		h3{padding-top: 87px;font-size: 24px;}
+		h2{margin: 17px 0 24px 0;font-size: 35px;}
 		.donate-infr1{padding-bottom: 30px;padding-right:40px;line-height: 1.3;font-size: 20px;}
 		.donate-inf2{padding-right:40px;line-height: 1.3;font-size: 20px;margin-bottom: 44px;}
 		.btn{width: 50%;}
@@ -2069,8 +2058,8 @@ font-size: 24px;position: relative;top:-6px;
 	
 	.payments-inner{width: 100%;margin-top:60px;margin-bottom: 50px;
 	.snap-details{margin-right: 0;margin-bottom:29px;
-		p{line-height: 16px;font-size: 12px;font-family: $futurabold;}
-		.snap-header{margin-bottom: 12px;font-family: $bold}
+		p{line-height: 16px;font-size: 12px;}
+		.snap-header{margin-bottom: 12px;}
 		span{display: block;}
 		.middle{margin-bottom: 12px;}
 	
@@ -2085,19 +2074,19 @@ font-size: 24px;position: relative;top:-6px;
 
 	.bank-details {@include spacebtwn();
 	.bank-type{
-		p{font-family: $futurabold;line-height: 17px;font-size: 12px;}
+		p{line-height: 17px;font-size: 12px;}
 	}
 	.reference{	
-		p{font-family: $futurabold;line-height: 17px;font-size: 12px;
+		p{line-height: 17px;font-size: 12px;
 		span{display: block;}
 		}
 	
 	}
 	.number{
-			p{font-family: $futurabold;line-height: 17px;font-size: 12px;}
+			p{line-height: 17px;font-size: 12px;}
 		}
 	}
-	.PBO-number{margin-bottom: 60px;font-family: $futurabold;font-size: 12.5px;}
+	.PBO-number{margin-bottom: 60px;font-size: 12.5px;}
 	
 	}
 	
@@ -2105,7 +2094,7 @@ font-size: 24px;position: relative;top:-6px;
 	// end-payments
 	
 	// line
-	 .line{width:90%; height: 1px;background-color:#979797;display: flex;justify-content: center;margin:auto;}
+	 .line{width:90%; height: 1px;display: flex;justify-content: center;margin:auto;}
 
 
 
@@ -2114,24 +2103,24 @@ font-size: 24px;position: relative;top:-6px;
 .our-team{display: flex;justify-content:center;margin-top:60px;margin-bottom:30px;
 	img{display: none;}
 	.card{width:100%;height: 500px;background-color: $pink;padding-left:45px;
-		h3{padding-top: 87px;font-size: 24px;color: $heading;}font-weight: $medium;
-		h2{margin: 17px 0 24px 0;font-size: 35px;font-weight: $medium;}
-		a{margin-top: 36x;text-decoration: none;color: white;background-color: $btncolor;width: 50%;}
-		.donate-infr1{padding-bottom: 30px;padding-right:40px;line-height: 1.3;font-size: 20px;font-family: $regular;}
-		.donate-inf2{padding-right:40px;line-height: 1.3;font-size: 20px;margin-bottom: 44px;font-family: $regular;}
+		h3{padding-top: 87px;font-size: 24px;}
+		h2{margin: 17px 0 24px 0;font-size: 35px;}
+		a{margin-top: 36x;width: 50%;}
+		.donate-infr1{padding-bottom: 30px;padding-right:40px;line-height: 1.3;font-size: 20px;}
+		.donate-inf2{padding-right:40px;line-height: 1.3;font-size: 20px;margin-bottom: 44px;}
 	}
 }
 // end-our-team
 
 // start-location
-.location{margin-top:0;background-color: #EBE6DD;padding:0  71px 30px 71px;
+.location{margin-top:0;padding:0  71px 30px 71px;
 
 	h2{font-size: 33px;}
 	img{display: inline;}
 	.location-details{
-		.location-heading{font-size: 30px;font-family: $medium;margin: 24px 0;}
-		.location-infr{font-size: 16px;font-family: $regular;margin-bottom: 17px;margin-right: 0;line-height: 1.3;}
-		p{font-size: 12px;margin-bottom: 19px;font-family: $medium;}
+		.location-heading{font-size: 30px;margin: 24px 0;}
+		.location-infr{font-size: 16px;margin-bottom: 17px;margin-right: 0;line-height: 1.3;}
+		p{font-size: 12px;margin-bottom: 19px;}
 	}
 	.map{display: flex;justify-content: center;padding-bottom: 0;
 	img{width:100%;}
@@ -2150,7 +2139,7 @@ font-size: 24px;position: relative;top:-6px;
 	}
  
  .contact-details{margin-left: -30px;
-	 p{margin-bottom: 23px;font-family:$Futura;font-size:15px;
+	 p{margin-bottom: 23px;font-size:15px;
 		 span{display: block;}
 	 }
  
@@ -2158,10 +2147,12 @@ font-size: 24px;position: relative;top:-6px;
 
 .contact-form{margin-left: 6%;width:100%;
 	p{font-size: 15px;margin-left: 0;}
-	input[type="text"]{font-size: 15px;color: #F0F0F0;width: 100%;height:35px;border: 1px solid #F0F0F0;margin-top:25px;margin-bottom: 20px;padding-left: 15px;border: 1px solid #F0F0F0;font-family: $regular;}
-     input[type="email"]{font-size: 15px;color: #F0F0F0;width: 100%;height: 35px;border: 1px solid #F0F0F0;margin-bottom: 20px;padding-left: 15px;border: 1px solid #F0F0F0;font-family: $regular;}
-    textarea{width: 100%;height: 50px;border: 1px solid #F0F0F0;margin-bottom: 20px;color: #F0F0F0;font-size: 15px;padding: 15px 0 0 15px;border: 1px solid #F0F0F0;font-family: $regular;}
-     .send{height: 35px;font-size: 15px;width: 150px;}
+	input[type="text"]{font-size: 15px;width: 100%;height:35px;margin-top:25px;margin-bottom: 20px;padding-left: 15px;}
+     input[type="email"]{font-size: 15px;width: 100%;height: 35px;margin-bottom: 20px;padding-left: 15px;}
+    textarea{width: 100%;height: 50px;margin-bottom: 20px;font-size: 15px;padding: 15px 0 0 15px;}
+	 .send{height: 35px;font-size: 15px;width: 150px;
+	&:hover{background-color: $blackdark;color: white;}
+	}
 }
  .additional-infr{display: flex;flex-direction:column;width:100%;margin-left:35px;
 	 .additional-infr-heading{font-size: 20px;margin-top:0;}
@@ -2286,10 +2277,10 @@ font-size: 24px;position: relative;top:-6px;
 
 	.event-inner1{margin-top:0;margin-left:48px;
 		h3{margin-bottom: 15px;font-family: $medium;font-size: 25px;}
-	.event-date{margin-top:18px;margin-bottom: 10px;font-family: $regular;font-size: 16px;}
-	.event-heading{font-size: 18px;font-family: $regular;}
-	.event-time{margin-bottom: 15px;font-size: 16px;font-family: $regular;}
-	.direction{font-size: 16px;font-family:$regular;
+	.event-date{margin-top:18px;margin-bottom: 10px;font-size: 16px;}
+	.event-heading{font-size: 18px;}
+	.event-time{margin-bottom: 15px;font-size: 16px;}
+	.direction{font-size: 16px;
 		span{display: block;}
 	}
 	.event-infr{margin-top: 15px;font-size: 15px;margin-right: 0;line-height: 1.2;}
@@ -2323,8 +2314,8 @@ font-size: 24px;position: relative;top:-6px;
 		.sermons-banner{height: 415px;width: 100%;position: relative;z-index:1;margin-bottom:48px;
 	
 			.banner-inner{@include column();margin-left:71px;
-				p{margin-top: 240px; color: #FFFFFF;font-size: 22px;margin-bottom: 18px;}
-				h1{font-size: 43px;color: #FFFFFF;}
+				p{margin-top: 240px; font-size: 22px;margin-bottom: 18px;}
+				h1{font-size: 43px;}
 			
 			}
 		
@@ -2335,7 +2326,7 @@ font-size: 24px;position: relative;top:-6px;
 				.sermon-heading{font-size: 30px;text-align:center;}
 				.sermons-details{ display:flex;flex-direction:row;justify-content: center;
 					.sermons-img{
-						.fas{position: absolute;top: 40%; left:11%;color: white;font-size: 80px;}
+						.fas{position: absolute;top: 40%; left:11%;font-size: 80px;}
 					}
 				
 				
@@ -2371,7 +2362,7 @@ font-size: 24px;position: relative;top:-6px;
 				p{margin-bottom: 16px;font-size: 15px;}
 			  .date{font-size: 17px;margin-bottom: 14px;}
 
-			.line{background-color: #1C0902;width:10%; height: 3px;margin-top: 15px;position: absolute;left: 46%;margin-bottom: 52px;}
+			.line{width:10%; height: 3px;margin-top: 15px;position: absolute;left: 46%;margin-bottom: 52px;}
 		  }
 		  
   // end-latest-sermons
@@ -2405,9 +2396,9 @@ font-size: 24px;position: relative;top:-6px;
 				img{width: 100%;margin-top: 80px;margin-bottom: 80px;}
 		}
 
-		 .raised-funds{margin:0;background-color:#EBE6DD;padding: 100px 48px;margin-bottom:50px;
+		 .raised-funds{margin:0;padding: 100px 48px;margin-bottom:50px;
 
-			.line1{width:100%; height: 1px;background-color:#979797;padding:0 109px;margin-top: 5px;}
+			.line1{width:100%; height: 1px;padding:0 109px;margin-top: 5px;}
 			.line2{width:80%; height: 3px;bottom:-125%;
 				
 			}
@@ -2517,19 +2508,25 @@ font-size: 24px;position: relative;top:-6px;
 @media (width:568px){
 
 	.head{
-		
-
-		
+			
 	  
 	.nav.active{width: 240px;}
 
 	.nav ul{ position: absolute; top: 50%; transform: translateY(-50%); width: 100%;
 		li {margin-top: 0;padding-left:38px;margin-bottom:10px;
-	   a{color: black;text-decoration: none;font-size: 15px;font-family: $medium;}
+	   a{text-decoration: none;font-size: 15px;}
 	   }
 		 }
 	
 		}
+
+
+		.latest-semons{
+			 
+			img{width: 100%;}
+	
+		 .line{left: 43.5%;}
+	  }
 
 }
 
@@ -2541,7 +2538,7 @@ font-size: 24px;position: relative;top:-6px;
 
 	.nav-contact{
 		
-	        p{color:white;z-index: 8;display: flex;font-size: 18px;margin-right: 72px;line-height: 1.9;}
+	        p{z-index: 8;display: flex;font-size: 18px;margin-right: 72px;line-height: 1.9;}
 	
 
 	}
@@ -2552,7 +2549,7 @@ font-size: 24px;position: relative;top:-6px;
 .nav.active{width: 380px;height: 100vh;}
 .nav ul{ position: absolute; top: 45%; transform: translateY(-50%); width: 100%;
 	li {margin-top: 3rem;padding-left:38px;
-   a{color: black;text-decoration: none;font-size: 25px;font-family: $medium;}
+   a{text-decoration: none;font-size: 25px;}
    }
 	 }
 		
@@ -2571,7 +2568,7 @@ font-size: 24px;position: relative;top:-6px;
 			
 		}
 	}
-	a{padding:23px 28px;text-decoration: none;color: $black;background-color: white;margin-top:30px;}
+	a{padding:23px 28px;margin-top:30px;}
 	}
 	
 	
@@ -2587,13 +2584,13 @@ font-size: 24px;position: relative;top:-6px;
 	
 			.about-img2{width: 200px;height: 200px;background-position:center;
 				.overlay{ 
-					a{position:absolute;top: 25%;left: 50%;transform: translate(-50%, 50%);font-size: 26px;color: $white;font-family: $bold;z-index: 2;}
+					a{position:absolute;top: 25%;left: 50%;transform: translate(-50%, 50%);font-size: 26px;}
 					}
 				}
 			
 			.about-img3{width: 200px;height: 200px;background-position:center;
 			.overlay{ 
-				a{position:absolute;top: 35%;left: 50%;transform: translate(-50%, 50%);font-size: 26px;color: $white;font-family: $bold;z-index: 2;}
+				a{position:absolute;top: 35%;left: 50%;transform: translate(-50%, 50%);font-size: 26px;}
 				}
 			}
 		}
@@ -2601,7 +2598,7 @@ font-size: 24px;position: relative;top:-6px;
 	   h3{font-size: 24px;margin-bottom: 20px;}
 	   h2{font-size: 48px;margin-bottom: 25px;}
 	   p{margin:0 20px 15px 20px ;font-size: 22px;line-height: 1.5;}
-	   .middle{margin-left:0;margin-right: 0;font-family: $regular;}
+	   .middle{margin-left:0;margin-right: 0;}
 	}
 
 
@@ -2614,12 +2611,12 @@ font-size: 24px;position: relative;top:-6px;
 
 	.meeting-img{display: none;}
 	
-	.card1{width: 327px;height: 330px;background-color: $cold2;margin-left: 0;outline-offset: -8px;border-radius: 4px;margin-bottom: 18px;text-align: center;outline: 1px solid #FFFFFF;outline-offset: -6px;
+	.card1{width: 327px;height: 330px;margin-left: 0;margin-bottom: 18px;text-align: center;
 	.date{padding-top: 19px;font-size:22px;
 	span{display: block;padding-bottom: 13px;font-size:22px;}
 	}
 	p{font-size:22px;line-height: 1.3;}
-	.text{margin-top: 13px;margin-bottom: 18px;font-size: 18px;line-height: 1.3;margin-right: 30px;margin-left: 30px;font-family: $regular;}
+	.text{margin-top: 13px;margin-bottom: 18px;font-size: 18px;line-height: 1.3;margin-right: 30px;margin-left: 30px;}
 	}
 
 }
@@ -2636,12 +2633,12 @@ font-size: 24px;position: relative;top:-6px;
 	
 
 	.work-inner{height: 702px;padding-left: 30px;
-		.infr{width:100%;height: 0px;padding-left:10px;z-index: 1;
+		.infr{width:100%;height: 0px;padding-left:10px;
 			h3{padding-top: 30px;font-size: 24px;}
 			 h2{margin: 17px 0 10px 0;font-size: 30px;}
 	  .donate-inf1{padding-bottom: 15px;padding-right:20px;line-height: 1.3;font-size: 20px;}
 	  .donate-inf2{padding-right:20px;line-height: 1.3;font-size: 20px;margin-bottom: 15px;}
-			.w-btn{border: none;color: white;font-size: 16px;display: flex;justify-content: center;align-items:center;width:205px;height: 30px;padding:0;text-decoration: none;
+			.w-btn{font-size: 16px;display: flex;justify-content: center;align-items:center;width:205px;height: 30px;padding:0;text-decoration: none;
 			
 			}
 	  .items{
@@ -2692,7 +2689,7 @@ font-size: 24px;position: relative;top:-6px;
 .events{margin: 130px 76px 139px 76px;
 	
 	
-	.see-more-btn {font-size: 21px;color: $black;text-decoration: none;font-family: $regular;}
+	.see-more-btn {font-size: 21px;}
 	
 	
 	.service-time{margin-top: 55px;margin-left: 0;}
@@ -2705,23 +2702,21 @@ font-size: 24px;position: relative;top:-6px;
 
 
 // start-notices-section
-.notices{background-color: #8DDED2;padding: 100px 71px 114px 71px;
-	h3{	color: $heading;font-size: 24px;font-family: $medium;}
-	h2{font-size: 48px;margin-top:29px;margin-bottom: 36px;font-family: $medium;}
-.acc{background-color:white;margin-bottom: 50px;padding:34px 30px 42px 28px; 
-	h4{margin:0;cursor: pointer;position: relative;font-size:16px;font-family:$medium;
-	  &:after{content: "+";position: absolute;right: 20px;font-size: 50px;font-family: $light;top:-90%;}
+.notices{padding: 100px 71px 114px 71px;
+	h3{	font-size: 24px;}
+	h2{font-size: 48px;margin-top:29px;margin-bottom: 36px;}
+.acc{margin-bottom: 50px;padding:34px 30px 42px 28px; 
+	h4{margin:0;cursor: pointer;position: relative;font-size:16px;
+	  &:after{content: "+";position: absolute;right: 20px;font-size: 50px;top:-90%;}
 	  }
  .content{display: none;}
-	   p{margin-right: 86px;font-size: 18px;font-family: $regular;margin-top: 29px;line-height: 1.3;}
+	   p{margin-right: 86px;font-size: 18px;margin-top: 29px;line-height: 1.3;}
  .accordion_head{font-size:20px;}
 }
  img{width:300px;height: 478px;margin-top: 100px;object-fit: contain;}
 }
 
-// .acc.active h4{
-//  &:after{content:"";background-color: $black;height: 2px;width:42px;top:70%;position: absolute;}
-// } 
+
 // end-notices-section
 
 
@@ -2745,12 +2740,12 @@ font-size: 24px;position: relative;top:-6px;
 // start-sermons
 .donations{display: flex;justify-content:center;margin-bottom:125px;
 	img{width: 100%;height: 700px;object-fit: cover;}
-	.donation-inner{width:100%;height: 700px;background-color: $pink;padding-left:45px;
-		h3{padding-top: 87px;font-size: 24px;color: $heading;font-family: $medium;}
-		h2{margin: 17px 0 24px 0;font-size: 30px;font-family: $medium;}
-		.donate-infr1{padding-bottom: 30px;padding-right:40px;line-height: 1.3;font-size: 20px;font-family: $regular;}
-		.donate-inf2{padding-right:40px;line-height: 1.3;font-size: 20px;margin-bottom: 44px;font-family: $regular;}
-		.btn{text-decoration: none;color: white;background-color: $btncolor;font-family: $medium;width: 70%;}
+	.donation-inner{width:100%;height: 700px;padding-left:45px;
+		h3{padding-top: 87px;font-size: 24px;}
+		h2{margin: 17px 0 24px 0;font-size: 30px;}
+		.donate-infr1{padding-bottom: 30px;padding-right:40px;line-height: 1.3;font-size: 20px;}
+		.donate-inf2{padding-right:40px;line-height: 1.3;font-size: 20px;margin-bottom: 44px;}
+		.btn{width: 70%;}
 	}
 }
 
@@ -2766,35 +2761,35 @@ font-size: 24px;position: relative;top:-6px;
    
 	.payments-inner{@include flex();
 	.snap-details{margin-right:0;margin-bottom:15px;
-		p{line-height: 1.3;font-size: 20px;font-family: $futurabold;}
-		.snap-header{margin-bottom: 10px;font-family: $bold}
-	   span{display: block;font-size: 20px;font-family: $futurabold;}
+		p{line-height: 1.3;font-size: 20px;}
+		.snap-header{margin-bottom: 10px;}
+	   span{display: block;font-size: 20px;}
 		.middle{margin-bottom: 25px;line-height: 1.3;}
    
 	}
    
 	}
-	.banking-infr{font-size: 20px;font-family: $Futura;margin-bottom:25px;
+	.banking-infr{font-size: 20px;margin-bottom:25px;
    span{display: block;line-height: 1.3;}
 	}
 	.banking-information{ padding-left: 0;margin:80px 0 0 0;
    
-   .banking-head{margin-bottom:15px;font-size: 20px;font-family: $bold;}
+   .banking-head{margin-bottom:15px;font-size: 20px;}
    .bank-details {@include spacebtwn();margin-right:auto;
    .bank-type{
-		p{font-family: $futurabold;line-height: 1.3;font-size: 20px;}
+		p{line-height: 1.3;font-size: 20px;}
 	}
 	.reference{	
-	   p{font-family: $futurabold;line-height: 1.3;font-size: 20px;
+	   p{line-height: 1.3;font-size: 20px;
 	   span{display: block;}
 	   }
    
 	}
 	.number{
-		   p{font-family: $futurabold;line-height: 1.3;font-size: 20px;}
+		   p{line-height: 1.3;font-size: 20px;}
 		}
    }
-	.PBO-number{margin-top: 50px;font-family: $futurabold;font-size: 20px;}
+	.PBO-number{margin-top: 50px;font-size: 20px;}
    
 	}
    
@@ -2802,7 +2797,7 @@ font-size: 24px;position: relative;top:-6px;
    // // end-payments
    
    // // line
-	.line{width:90%; height: 1px;background-color:#979797;display: flex;justify-content: center;margin:65px;margin: auto;}
+	.line{width:90%; height: 1px;display: flex;justify-content: center;margin:65px;margin: auto;}
    
 
 
@@ -2810,26 +2805,26 @@ font-size: 24px;position: relative;top:-6px;
 // our-team
 .our-team{display: flex;justify-content:center;margin-top:120px;
 	img{width: 100%;height: 700px;object-fit: cover;}
-	.card{width:100%;height: 700px;background-color: $pink;padding-left:45px;
-		h3{padding-top: 87px;font-size: 24px;color: $heading;font-family: $medium;}
-		h2{margin: 17px 0 24px 0;font-size: 35px;font-family: $medium;}
-		.donate-infr1{padding-bottom: 30px;padding-right:40px;line-height: 1.3;font-size: 20px;font-family: $regular;}
-		.donate-inf2{padding-right:40px;line-height: 1.3;font-size: 20px;margin-bottom: 34px;font-family: $regular;}
-		// .btn{text-decoration: none;color: white;background-color: $btncolor;padding:15px 36px;font-weight: $medium;}
-		a{margin-top: 36x;text-decoration: none;color: white;background-color: $btncolor;width: 80%;}
+	.card{width:100%;height: 700px;padding-left:45px;
+		h3{padding-top: 87px;font-size: 24px;}
+		h2{margin: 17px 0 24px 0;font-size: 35px;}
+		.donate-infr1{padding-bottom: 30px;padding-right:40px;line-height: 1.3;font-size: 20px;}
+		.donate-inf2{padding-right:40px;line-height: 1.3;font-size: 20px;margin-bottom: 34px;}
+		
+		a{margin-top: 36x;width: 80%;}
 	}
 }
 // end-our-team
 
 // start-location
-.location{margin-top:70px;background-color: #EBE6DD;padding:0 71px;
-	h3{padding-top: 76px;font-size: 26px;font-family: $medium;color: $heading;padding-bottom: 12px;}
-	h2{font-size: 48px;font-family: $medium;margin-bottom: 0;}
+.location{margin-top:70px;padding:0 71px;
+	h3{padding-top: 76px;font-size: 26px;padding-bottom: 12px;}
+	h2{font-size: 48px;margin-bottom: 0;}
 	img{padding-top: 93px;width: 600px;height: 428px;padding-bottom: 38px;}
 	.location-details{padding-bottom: 60px;
-		.location-heading{font-size: 36px;font-family: $medium;margin-bottom: 24px;}
-		.location-infr{font-size: 20px;font-family: $regular;margin-bottom: 17px;margin-right: 36%;line-height: 1.3;}
-		p{font-size: 20px;margin-bottom: 19px;font-family: $medium;}
+		.location-heading{font-size: 36px;margin-bottom: 24px;}
+		.location-infr{font-size: 20px;margin-bottom: 17px;margin-right: 36%;line-height: 1.3;}
+		p{font-size: 20px;margin-bottom: 19px;}
 	}
 	.map{padding-bottom: 0;
 	img{display:none;}
@@ -2840,28 +2835,28 @@ font-size: 24px;position: relative;top:-6px;
 .footer{margin:60px 10px 0 10px;
 .logo{display: flex;margin-bottom:47px;
 img{width: 70px;height: 70px;margin-right: 34px;}
-p{font-size: 20px;font-family: $medium;}
+p{font-size: 20px;}
 }
 
 .contact-details{
-	p{margin-bottom: 23px;font-family:$Futura;font-size:15px;
+	p{margin-bottom: 23px;font-size:15px;
 		span{display: block;}
 	}
 
 }
-.contact-form{font-size: 20px;font-family: $medium;margin-bottom: 60px;
-input[type="text"]{font-size: 15px;color: #F0F0F0;width: 220px;height: 40px;border: 1px solid #F0F0F0;margin-top:25px;margin-bottom: 20px;padding-left: 15px;}
-input[type="email"]{font-size: 15px;color: #F0F0F0;width: 220px;height: 40px;border: 1px solid #F0F0F0;margin-bottom: 20px;padding-left: 15px;}
-textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px;color: #F0F0F0;font-size: 15px;padding: 15px 0 0 15px;}
-.send {text-decoration: none;color: white;background-color: $btncolor;height: 40px;width: 220px;font-size: 16px;font-family: $medium;border: none;text-align: center;}
+.contact-form{font-size: 20px;margin-bottom: 60px;
+input[type="text"]{font-size: 15px;width: 220px;height: 40px;margin-top:25px;margin-bottom: 20px;padding-left: 15px;}
+input[type="email"]{font-size: 15px;width: 220px;height: 40px;margin-bottom: 20px;padding-left: 15px;}
+textarea{width: 220px;height: 80px;margin-bottom: 20px;font-size: 15px;padding: 15px 0 0 15px;}
+.send {text-decoration: none;height: 40px;width: 220px;font-size: 16px;border: none;text-align: center;}
 
 
 
 }
 
 .additional-infr{
-	.additional-infr-heading{font-size: 20px;font-family: $medium;margin-bottom: 20px;}
-	p{font-family: $medium;font-size: 15px;margin-bottom:18px;
+	.additional-infr-heading{font-size: 20px;margin-bottom: 20px;}
+	p{font-size: 15px;margin-bottom:18px;
 	span{display: block;margin-top: 10px;font-size: 16px;}
 	}
 .links{
@@ -2896,9 +2891,9 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 	.about-children-church{margin:130px 20px 0 20px;
 	img{height: 580px;width: 100%;object-fit: cover;margin-bottom: 40px;}
 
-	.children-heading{margin-top: 0;font-size: 21px;font-family: $bold;}
+	.children-heading{margin-top: 0;font-size: 21px;}
 	p{font-size: 18px;line-height: 1.2;width: 100%;}
-	ol{font-size: 22px;margin: 15px 50px;font-family: $regular;line-height: 1.2;}
+	ol{font-size: 22px;margin: 15px 50px;line-height: 1.2;}
 	}
 	// activities-for-children
 	.activities-for-children{margin:40px 30px 120px 30px;text-align: center;
@@ -2926,8 +2921,8 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 			.messy-banner{height: 550px;width: 100%;position: relative;z-index:1;margin-bottom:48px;
 	
 				.banner-inner{@include column();margin-left:71px;
-					p{margin-top: 283px; color: #FFFFFF;font-size: 22px;margin-bottom: 18px;}
-					h1{font-size: 43px;color: #FFFFFF;}
+					p{margin-top: 283px; font-size: 22px;margin-bottom: 18px;}
+					h1{font-size: 43px;}
 				
 				}
 			
@@ -2936,12 +2931,12 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 				// about-messy-church
 				.about-messy-church{margin: 0 20px;
 					img{width: 100%;object-fit: contain;}
-					.heading{margin-top: 100px;font-family: $regular;font-size: 22px;margin: 90px 0 24px 0;}
-					h2{font-size: 30px;font-family: $regular;margin-bottom: 12px;}
-					p{font-size: 22px;font-family: $italic;}
+					.heading{margin-top: 100px;font-size: 22px;margin: 90px 0 24px 0;}
+					h2{font-size: 30px;margin-bottom: 12px;}
+					p{font-size: 22px;}
 		
 					.about-messy-details{margin-top: 30px;
-						p{font-size: 22px;font-family: $regular;line-height: 1.3;margin: 22px 12px  0 12px;}
+						p{font-size: 22px;line-height: 1.3;margin: 22px 12px  0 12px;}
 					}
 					
 				}
@@ -2952,8 +2947,8 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 				 .test-infr{
 		
 					h4{font-size: 24px;margin: 0 0 12px 0;}
-					.test-details{font-family: $regular;font-size: 20px;line-height: 1.3;margin-bottom: 20px;}
-					.further-details{font-size: 20px;font-family: $medium;line-height:1.2}
+					.test-details{font-size: 20px;line-height: 1.3;margin-bottom: 20px;}
+					.further-details{font-size: 20px;line-height:1.2}
 				 }
 				}
 				// end
@@ -2966,8 +2961,8 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 .event-banner{ background-position: center;background-size: cover;height: 550px;width: 100%;position: relative;z-index:1;
 	
 	.events-banner-inner{@include column();
-		p{margin-top: 293px; color: #FFFFFF;font-size: 22px;margin-bottom: 20px;}
-		h1{font-size: 43px;color: #FFFFFF;}
+		p{margin-top: 293px; font-size: 22px;margin-bottom: 20px;}
+		h1{font-size: 43px;}
 	
 	}
 
@@ -2980,14 +2975,14 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 		.event-img{object-fit: cover;height: 380px;width: 100%;margin: auto;margin-bottom: 10%;margin-left: -36px;}
 
 		.event-inner1{margin-top:0;margin-left:30px;
-			h3{margin-bottom: 18px;font-family: $medium;font-size: 38px;}
-		.event-date{margin-top:18px;margin-bottom: 10px;font-family: $regular;font-size: 18px;}
-		.event-heading{font-size: 21px;font-family: $regular;}
-		.event-time{margin-bottom: 27px;font-size: 18px;font-family: $regular;}
-		.direction{font-size: 21px;font-family:$regular;
+			h3{margin-bottom: 18px;font-size: 38px;}
+		.event-date{margin-top:18px;margin-bottom: 10px;font-size: 18px;}
+		.event-heading{font-size: 21px;}
+		.event-time{margin-bottom: 27px;font-size: 18px;}
+		.direction{font-size: 21px;
 			span{display: block;}
 		}
-		.event-infr{margin-top: 27px;font-size: 16px;font-family: $regular;margin-right: 0;line-height: 1.3;}
+		.event-infr{margin-top: 27px;font-size: 16px;margin-right: 0;line-height: 1.3;}
 	     
 		}
 	}
@@ -3001,7 +2996,7 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 		.event-details{margin-left:25px;
 		 h3{font-size: 18px;margin-bottom: 15px;}
 		 .day{font-size: 16px;margin-bottom: 10px;}
-		 .event-infr{ font-size: 16px;font-family: $regular;line-height: 1;margin-right: 0;}
+		 .event-infr{ font-size: 16px;line-height: 1;margin-right: 0;}
 		 .time{margin-top: 10px;font-size: 14px;}
 		}
 		}
@@ -3018,15 +3013,15 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 		.sermons-banner{height: 550px;width: 100%;position: relative;z-index:1;margin-bottom:48px;
 	
 			.banner-inner{@include column();margin-left:71px;
-				p{margin-top: 283px; color: #FFFFFF;font-size: 22px;margin-bottom: 18px;}
-				h1{font-size: 43px;color: #FFFFFF;}
+				p{margin-top: 283px; font-size: 22px;margin-bottom: 18px;}
+				h1{font-size: 43px;}
 			
 			}
 		
 			}
 
 			.our-latest-semons{margin: 104px 165px 153px 165px;
-				.sermon-heading{margin-bottom: 62px;font-family: $medium;font-size: 40px;color: $black;}
+				.sermon-heading{margin-bottom: 62px;font-size: 40px;}
 				.sermons-details{ display:flex;flex-direction:row;justify-content: center;margin:0 20%;
 					.sermons-img{
 						.fas{position: absolute;
@@ -3037,14 +3032,14 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 				img{width: 304px;height: 400px;object-fit: cover;}
 				.sermons-inner{margin-left: 30px;
 				
-					.sermon-heading2{font-family: $bold;font-size: 35px;text-decoration: none;color: $black;}
-					.sermon-infr{font-size: 18px;font-family: $regular;line-height: 1.3;margin-right: 0;margin-bottom: 24px;margin-top: 24px;}
-					 .date{font-size: 18px;font-family:$regular;margin-top:24px;text-decoration:none;color:black;
-						 span{color: $heading;font-family:$regular;font-size: 18px;}
+					.sermon-heading2{font-size: 35px;}
+					.sermon-infr{font-size: 18px;line-height: 1.3;margin-right: 0;margin-bottom: 24px;margin-top: 24px;}
+					 .date{font-size: 18px;margin-top:24px;
+						 span{font-size: 18px;}
 					 }
 					 
 					
-					.btn{background: black;font-size: 18px;color:rgb(193, 193, 193);padding:11px 27px 11px 17px;margin-top: 20px;font-family: $regular;
+					.btn{background: black;font-size: 18px;padding:11px 27px 11px 17px;margin-top: 20px;
 					
 					
 					}
@@ -3059,18 +3054,18 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 
 
 			.latest-semons{margin-bottom: 116px;
-				h3{margin: 91px 0 30px 0;text-align: center;font-size: 24px;color: $heading;}
+				h3{margin: 91px 0 30px 0;text-align: center;font-size: 24px;}
 				.heading3{margin-bottom: 72px;font-size: 26px;} 
 				img{margin-bottom: 38px;}
-				p{margin-bottom: 16px;font-size: 36px;font-family: $medium;
+				p{margin-bottom: 16px;font-size: 36px;
 		  
 			  }
-			  .date{font-size: 21px;color: $heading;font-family: $medium;}
+			  .date{font-size: 21px;}
 			  .sermon-details{font-size: 18px;margin-top:8px;line-height: 1.3;}
-			  .see-earlier{text-decoration: none;text-align: center;font-size: 16px;color:$heading;align-self:center;display:flex;justify-content:center;font-family: $medium;margin-top: 23px;
+			  .see-earlier{text-align: center;font-size: 16px;align-self:center;display:flex;justify-content:center;margin-top: 23px;
 	
 			}
-			.line{background-color: #1C0902;width:12%; height: 3px;margin-top: 15px;position: absolute;left: 44%;margin-bottom: 52px;}
+			.line{width:12%; height: 3px;margin-top: 15px;position: absolute;left: 44%;margin-bottom: 52px;}
 		  }
 		  
  // end-latest-sermon
@@ -3086,17 +3081,17 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 	   p{display: block;font-size: 20px;
 		  span{display: block;}
 	   }
-	   .number{font-size: 18px;font-family: $regular;margin-top: 12px;}
+	   .number{font-size: 18px;margin-top: 12px;}
    
 	   }
    
 	   .church-details{margin-left: 40px;margin-right:auto;
 	   
 		   .heading{font-size: 28px;margin-bottom: 9px;}
-		   .days{font-size: 13px; font-family: $regular;}
+		   .days{font-size: 13px;}
 		   .name{font-size: 22;margin: 17px 0;}
 		   p{font-size:20px;
-			   span{display: inline;font-size: 10px; font-family: $regular;display: none;}
+			   span{display: inline;font-size: 10px;display: none;}
 		   }
 	   }
 	}
@@ -3113,7 +3108,7 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
    .wards-inner{  display: flex;justify-content:space-evenly;flex-direction:row;
    .ward{display: flex;flex-direction: row;
 	   p{font-size:21px;margin-top:10px;width: 100%;margin-right:0;margin-left:15px;
-		   span{display: block;margin-top:20px; font-size: 16px; font-weight: $regular;}
+		   span{display: block;margin-top:20px; font-size: 16px;}
 		   em{display: block;}
 	   }
 	   img{width:100px;height: 120px;object-fit: contain;margin-right:0;}
@@ -3135,7 +3130,7 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 		   .heading{font-size: 20px;margin-bottom: 21px;
 		   span{display: block;}
 		   }
-	   .number{font-size: 16px;margin-top:10px;display: block;font-family: $regular;}
+	   .number{font-size: 16px;margin-top:10px;display: block;}
 	   
 		   }
 		   }
@@ -3174,7 +3169,7 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 .nav.active{width: 400px;height: 100vh;}
 .nav ul{ position: absolute; top: 45%; transform: translateY(-50%); width: 100%;
 	li {margin-top: 3rem;padding-left:38px;
-   a{color: black;text-decoration: none;font-size: 25px;font-family: $medium;}
+   a{font-size: 25px;}
    }
 	 }
 		
@@ -3190,7 +3185,7 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 			
 		}
 	}
-	a{padding:23px 28px;text-decoration: none;color: $black;background-color: white;margin-top:30px;}
+	a{padding:23px 28px;margin-top:30px;}
 	}
 	
 	
@@ -3205,13 +3200,13 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 	
 			.about-img2{width: 300px;height: 200px;background-position:center;
 				.overlay{ 
-					a{position:absolute;top: 40%;left: 66%;transform: translate(-50%, 50%);font-size: 20px;width:100%}
+					a{top: 40%;left: 66%;transform: translate(-50%, 50%);font-size: 20px;width:100%}
 					}
 				}
 			
 			.about-img3{width: 300px;height: 200px;background-position:center;
 			.overlay{ 
-				a{position:absolute;top: 40%;left: 48%;transform: translate(-50%, 50%);font-size: 20px;}
+				a{top: 40%;left: 48%;transform: translate(-50%, 50%);font-size: 20px;}
 				}
 			}
 		}
@@ -3266,12 +3261,12 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 	
 
 	.work-inner{height: 701px;
-		.infr{width:100%;height: 0px;background-color: $pink;padding-left:20px;z-index: 1;
-			h3{padding-top: 50px;font-size: 26px;color: $heading;font-family: $regular;}
-			 h2{margin: 17px 0 10px 0;font-size: 30px;font-family: $medium;}
-	  .donate-inf1{padding-bottom: 18px;padding-right:14px;line-height: 1.3;font-size: 20px;font-family: $regular;}
-	  .donate-inf2{padding-right:15px;line-height: 1.3;font-size: 20px;margin-bottom:20px;font-family: $regular;}
-			.w-btn{border: none;color: white;background-color: $btncolor;font-size: 20px;display: flex;justify-content: center;align-items:center;width:205px;height: 30px;padding:0;text-decoration: none;
+		.infr{width:100%;height: 0px;padding-left:20px;z-index: 1;
+			h3{padding-top: 50px;font-size: 26px;}
+			 h2{margin: 17px 0 10px 0;font-size: 30px;}
+	  .donate-inf1{padding-bottom: 18px;padding-right:14px;line-height: 1.3;font-size: 20px;}
+	  .donate-inf2{padding-right:15px;line-height: 1.3;font-size: 20px;margin-bottom:20px;}
+			.w-btn{font-size: 20px;display: flex;justify-content: center;align-items:center;width:205px;height: 30px;padding:0;
 			
 			}
 	  .items{
@@ -3290,12 +3285,12 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 .latest-semons{margin-bottom: 116px;
 	h2{margin-bottom: 20px!important;}
 	.fas{left: 50%!important;}
-	  .latest-h{margin-bottom: 72px;font-size: 48px;text-align: center;font-family: $medium;text-decoration: none;color: $black;} 
+	  .latest-h{margin-bottom: 72px;font-size: 48px;text-align: center;} 
 	  img{margin-bottom: 38px;margin-top: 38px;}
-	   .latest-s-header {margin-bottom: 16px;font-size: 36px;font-family: $medium;text-decoration: none;color: $black;
+	   .latest-s-header {margin-bottom: 16px;font-size: 36px;text-decoration: none;
 
 	}
-	.date{font-size: 21px;color: $heading;font-family: $medium;text-decoration: none;margin-top: 16px!important;display: block;}
+	.date{font-size: 21px;margin-top: 16px!important;display: block;}
 }
 
 	
@@ -3308,24 +3303,24 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 // start-events-section
 .events{margin: 122px 76px 139px 76px;
 	
-	h3{margin-bottom: 24px;font-size: 20px;color: $heading;font-family: $regular;}
-	 h2{margin-bottom: 30px;font-size: 48px;font-family: $regular;}
+	h3{margin-bottom: 24px;font-size: 20px;}
+	 h2{margin-bottom: 30px;font-size: 48px;}
    .upcoming-events{display: flex;justify-content:space-around;
 	a{
 		img{width: 150px;height: 200px;object-fit: cover;}
 	}
 		
 	.events-infr{margin-left: 35px;
-			.event-day{font-size: 30px;font-family: $regular;margin-bottom: 24px;}
+			.event-day{font-size: 30px;margin-bottom: 24px;}
 			.event-category{margin:0 0 11px 0;font-size: 21px;}
-			  .event-details{font-size: 16px;line-height: 1.3;font-family: $regular;margin-right: 25px;font-family: $regular;}
+			  .event-details{font-size: 16px;line-height: 1.3;margin-right: 25px;}
 			  .event-date{font-size: 18px;margin-top: 24px;}
 			}
 	  .event-img-first{margin-bottom: 54px;}
 	   .event-img-second{margin-bottom: 29px;}
 
 }
-.see-more-btn {font-size: 18px;color: $black;text-decoration: none;font-family: $regular;}
+.see-more-btn {font-size: 18px;}
 
 .sunday-time-table{display: flex;
 		   p{font-size: $regular;
@@ -3340,7 +3335,7 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 	p{font-size: 18px;}
 }
 	 .menfellowship{display: flex;
-		 .card{background-color: $cold2;outline: 1px solid white;outline-offset: -11px;border-radius: 4px;width:691px;height: 560px;padding:18px;
+		 .card{width:691px;height: 560px;padding:18px;
 			.heading-infr{font-size: 21px;}
 				p{padding-top: 25px;line-height: 1.35;}
 }
@@ -3354,23 +3349,23 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 
 
 // start-notices-section
-.notices{background-color: #8DDED2;padding: 100px 71px 114px 71px;
-	h3{	color: $heading;font-size: 24px;font-family: $medium;}
-	h2{font-size: 48px;margin-top:29px;margin-bottom: 36px;font-family: $medium;}
-.acc{background-color:white;margin-bottom: 50px;padding:34px 30px 42px 28px; 
-	h4{margin:0;cursor: pointer;position: relative;font-size:16px;font-family:$medium;
-	  &:after{content: "+";position: absolute;right: 20px;font-size: 50px;font-family: $light;top:-90%;}
+.notices{padding: 100px 71px 114px 71px;
+	h3{	color: $heading;font-size: 24px;}
+	h2{font-size: 48px;margin-top:29px;margin-bottom: 36px;}
+.acc{margin-bottom: 50px;padding:34px 30px 42px 28px; 
+	h4{margin:0;cursor: pointer;position: relative;font-size:16px;
+	  &:after{content: "+";position: absolute;right: 20px;font-size: 50px;top:-90%;}
 	  }
  .content{display: none;}
-	   p{margin-right: 86px;font-size: 18px;font-family: $regular;margin-top: 29px;line-height: 1.3;}
+	   p{margin-right: 86px;font-size: 18px;margin-top: 29px;line-height: 1.3;}
  
 }
  img{width:300px;height: 478px;margin-top: 100px;object-fit: contain;}
 }
 
-.acc.active h4{
- &:after{content:"";background-color: $black;height: 2px;width:42px;top:70%;position: absolute;}
-} 
+// .acc.active h4{
+//  &:after{content:"";background-color: $black;height: 2px;width:42px;top:70%;position: absolute;}
+// } 
 // end-events-section
 
 
@@ -3380,7 +3375,7 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 // start-latest-sermons
 
 .latest-semons{margin-bottom: 116px;
-	.fas{position: absolute;top:18%;padding:12px;border-radius: 50%;left: 30%;color: white;}
+	.fas{position: absolute;top:18%;padding:12px;border-radius: 50%;left: 30%;}
 	
 	  h2{margin-bottom: 72px;font-size: 35px;text-align: center;} 
 	  img{margin-bottom: 38px;}
@@ -3395,12 +3390,12 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 // start-sermons
 .donations{display: flex;justify-content:center;margin-bottom:125px;
 	img{width: 100%;height: 700px;object-fit: cover;}
-	.donation-inner{width:100%;height: 700px;background-color: $pink;padding-left:45px;
-		h3{padding-top: 87px;font-size: 24px;color: $heading;font-family: $medium;}
-		h2{margin: 17px 0 24px 0;font-size: 30px;font-family: $medium;}
-		.donate-infr1{padding-bottom: 30px;padding-right:40px;line-height: 1.3;font-size: 20px;font-family: $regular;}
-		.donate-inf2{padding-right:40px;line-height: 1.3;font-size: 20px;margin-bottom: 44px;font-family: $regular;}
-		.btn{text-decoration: none;color: white;background-color: $btncolor;font-family: $medium;width: 70%;}
+	.donation-inner{width:100%;height: 700px;padding-left:45px;
+		h3{padding-top: 87px;font-size: 24px;}
+		h2{margin: 17px 0 24px 0;font-size: 30px;}
+		.donate-infr1{padding-bottom: 30px;padding-right:40px;line-height: 1.3;font-size: 20px;}
+		.donate-inf2{padding-right:40px;line-height: 1.3;font-size: 20px;margin-bottom: 44px;}
+		.btn{width: 70%;}
 	}
 }
 
@@ -3410,30 +3405,30 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 .our-team{display: flex;justify-content:center;margin-top:120px;
 	img{width: 100%;height: 700px;object-fit: cover;}
 	.card{width:100%;height: 700px;background-color: $pink;padding-left:45px;
-		h3{padding-top: 87px;font-size: 24px;color: $heading;font-family: $medium;}
-		h2{margin: 17px 0 24px 0;font-size: 35px;font-family: $medium;}
-		.donate-infr1{padding-bottom: 30px;padding-right:40px;line-height: 1.3;font-size: 20px;font-family: $regular;}
-		.donate-inf2{padding-right:40px;line-height: 1.3;font-size: 20px;margin-bottom: 34px;font-family: $regular;}
-		// .btn{text-decoration: none;color: white;background-color: $btncolor;padding:15px 36px;font-weight: $medium;}
-		a{margin-top: 36x;text-decoration: none;color: white;background-color: $btncolor;width: 80%;}
+		h3{padding-top: 87px;font-size: 24px;}
+		h2{margin: 17px 0 24px 0;font-size: 35px;}
+		.donate-infr1{padding-bottom: 30px;padding-right:40px;line-height: 1.3;font-size: 20px;}
+		.donate-inf2{padding-right:40px;line-height: 1.3;font-size: 20px;margin-bottom: 34px;}
+		
+		a{margin-top: 36x;width: 80%;}
 	}
 }
 // end-our-team
 
-// start-location
+
 
 
 
 //start-location-section
-.location{margin-top:183px;background-color: #EBE6DD;padding:0 71px;
-	h3{padding-top: 76px;font-size: 26px;font-family: $medium;color: $heading;padding-bottom: 12px;}
-	h2{font-size: 48px;font-family: $medium;margin-bottom: 53px;}
+.location{margin-top:183px;padding:0 71px;
+	h3{padding-top: 76px;font-size: 26px;padding-bottom: 12px;}
+	h2{font-size: 48px;margin-bottom: 53px;}
 	.location-img{padding-top: 93px;width: 650px;margin-bottom: 39px;object-fit: cover;height:398px;}
 	.location-details{
-		.location-heading{font-size: 25px;font-family: $medium;margin-bottom: 10px;}
-		.location-infr{font-size: 12px;font-family: $regular;margin-bottom: 8px;line-height: 1.2;word-spacing: 6px;margin-right: 10%;}
-		p{font-size: 12px;font-family: $medium;line-height: 1.3;}
-		.digits{margin: 0 0 10px 0;font-family: $medium;}
+		.location-heading{font-size: 25px;margin-bottom: 10px;}
+		.location-infr{font-size: 12px;margin-bottom: 8px;line-height: 1.2;word-spacing: 6px;margin-right: 10%;}
+		p{font-size: 12px;line-height: 1.3;}
+		.digits{margin: 0 0 10px 0;}
 	}
 	.map{padding-bottom: 92px;
 		
@@ -3449,26 +3444,26 @@ textarea{width: 220px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 .footer{margin:94px 10px 30px 10px;
 .logo{display: flex;margin-bottom:47px;
 img{width: 70px;height: 70px;margin-right: 34px;}
-p{font-size: 20px;font-family: $medium;}
+p{font-size: 20px;}
 }
 
 .contact-details{
-	p{margin-bottom: 23px;font-family:$Futura;font-size:15px;
+	p{margin-bottom: 23px;font-size:15px;
 		span{display: block;}
 	}
 
 }
-.contact-form{font-size: 20px;font-family: $medium;margin-bottom: 23px;
-input[type="text"]{font-size: 15px;color: #F0F0F0;width: 230px;height: 35px;border: 1px solid #F0F0F0;margin-top:25px;margin-bottom: 20px;padding-left: 15px;}
-input[type="email"]{font-size: 15px;color: #F0F0F0;width: 230px;height: 35px;border: 1px solid #F0F0F0;margin-bottom: 20px;padding-left: 15px;}
-textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px;color: #F0F0F0;font-size: 15px;padding: 15px 0 0 15px;}
-.send {text-decoration: none;color: white;background-color: $btncolor;height: 40px;width: 230px;font-size: 20px;font-family: $medium;border: none;}
+.contact-form{font-size: 20px;margin-bottom: 23px;
+input[type="text"]{font-size: 15px;width: 230px;height: 35px;margin-top:25px;margin-bottom: 20px;padding-left: 15px;}
+input[type="email"]{font-size: 15px;width: 230px;height: 35px;margin-bottom: 20px;padding-left: 15px;}
+textarea{width: 230px;height: 80px;margin-bottom: 20px;font-size: 15px;padding: 15px 0 0 15px;}
+.send {height: 40px;width: 230px;font-size: 20px;}
 
 
 }
 .additional-infr{
-	.additional-infr-heading{font-size: 20px;font-family: $medium;margin-bottom: 20px;}
-	p{font-family: $medium;font-size: 15px;margin-bottom:30px;
+	.additional-infr-heading{font-size: 20px;margin-bottom: 20px;}
+	p{font-size: 15px;margin-bottom:30px;
 	span{display: block;margin-top: 10px;font-size: 15px;}
 	}
 
@@ -3503,9 +3498,9 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 	.about-children-church{margin:100px 20px 0 20px;
 	img{height: 400px;width: 100%;object-fit: cover;margin-bottom: 40px;}
 
-	.children-heading{margin-top: 0;font-size: 21px;font-family: $bold;}
+	.children-heading{margin-top: 0;font-size: 21px;}
 	p{font-size: 18px;line-height: 1.2;width: 100%;}
-	ol{font-size: 22px;margin: 15px 50px;font-family: $regular;line-height: 1.2;}
+	ol{font-size: 22px;margin: 15px 50px;line-height: 1.2;}
 	}
 	// activities-for-children
 	.activities-for-children{margin:0 25px 80px 25px;text-align: center;
@@ -3534,8 +3529,8 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 			.messy-banner{height: 550px;width: 100%;position: relative;z-index:1;margin-bottom:48px;
 	
 				.banner-inner{@include column();margin-left:71px;
-					p{margin-top: 283px; color: #FFFFFF;font-size: 22px;margin-bottom: 18px;}
-					h1{font-size: 43px;color: #FFFFFF;}
+					p{margin-top: 283px;font-size: 22px;margin-bottom: 18px;}
+					h1{font-size: 43px;}
 				
 				}
 			
@@ -3560,8 +3555,8 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 				.test-infr{
 		   
 					   h4{font-size: 24px;margin: 0 0 12px 0;}
-					   .test-details{font-family: $regular;font-size: 20px;line-height: 1.3;margin-bottom: 20px;}
-					   .further-details{font-size: 20px;font-family: $medium;line-height:1.2}
+					   .test-details{font-size: 20px;line-height: 1.3;margin-bottom: 20px;}
+					   .further-details{font-size: 20px;line-height:1.2}
 					}
 				   }
 	.gallery{margin-top: 50px;
@@ -3577,8 +3572,8 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 .event-banner{ background-position: center;background-size: cover;height: 550px;width: 100%;position: relative;z-index:1;
 	
 	.events-banner-inner{@include column();
-		p{margin-top: 293px; color: #FFFFFF;font-size: 22px;margin-bottom: 20px;}
-		h1{font-size: 43px;color: #FFFFFF;}
+		p{margin-top: 293px;font-size: 22px;margin-bottom: 20px;}
+		h1{font-size: 43px;}
 	
 	}
 
@@ -3592,14 +3587,14 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 		.event-img{object-fit: cover;height: 380px;width: 100%;margin: auto;margin-bottom: 10%;margin-left: -37px;}
 
 		.event-inner1{margin-top:0;margin-left:48px;
-			h3{margin-bottom: 18px;font-family: $medium;font-size: 38px;}
-		.event-date{margin-top:18px;margin-bottom: 10px;font-family: $regular;font-size: 18px;}
-		.event-heading{font-size: 21px;font-family: $regular;}
-		.event-time{margin-bottom: 27px;font-size: 18px;font-family: $regular;}
-		.direction{font-size: 21px;font-family:$regular;
+			h3{margin-bottom: 18px;font-size: 38px;}
+		.event-date{margin-top:18px;margin-bottom: 10px;font-size: 18px;}
+		.event-heading{font-size: 21px;}
+		.event-time{margin-bottom: 27px;font-size: 18px;}
+		.direction{font-size: 21px;
 			span{display: block;}
 		}
-		.event-infr{margin-top: 27px;font-size: 16px;font-family: $regular;margin-right: 0;line-height: 1.3;}
+		.event-infr{margin-top: 27px;font-size: 16px;margin-right: 0;line-height: 1.3;}
 	     
 		}
 	}
@@ -3613,7 +3608,7 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 		.event-details{margin-left:25px;
 		 h3{font-size: 18px;margin-bottom: 15px;}
 		 .day{font-size: 16px;margin-bottom: 10px;}
-		 .event-infr{ font-size: 16px;font-family: $regular;line-height: 1;margin-right: 0;}
+		 .event-infr{ font-size: 16px;line-height: 1;margin-right: 0;}
 		 .time{margin-top: 10px;font-size: 14px;}
 		}
 		}
@@ -3631,8 +3626,8 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 		.sermons-banner{height: 550px;width: 100%;position: relative;z-index:1;margin-bottom:48px;
 	
 			.banner-inner{@include column();margin-left:71px;
-				p{margin-top: 283px; color: #FFFFFF;font-size: 22px;margin-bottom: 18px;}
-				h1{font-size: 43px;color: #FFFFFF;}
+				p{margin-top: 283px; font-size: 22px;margin-bottom: 18px;}
+				h1{font-size: 43px;}
 			
 			}
 		
@@ -3653,14 +3648,14 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 			img{width: 304px;height: 400px;object-fit: cover;}
 			.sermons-inner{margin-left: 30px;
 			
-				.sermon-heading2{font-family: $bold;font-size: 35px;text-decoration: none;color: $black;}
-				.sermon-infr{font-size: 18px;font-family: $regular;line-height: 1.3;margin-right: 0;margin-bottom: 24px;margin-top: 24px;}
-				 .date{font-size: 18px;font-family:$regular;margin-top:24px;text-decoration:none;color:black;
-					 span{color: $heading;font-family:$regular;font-size: 18px;}
+				.sermon-heading2{font-size: 35px;}
+				.sermon-infr{font-size: 18px;line-height: 1.3;margin-right: 0;margin-bottom: 24px;margin-top: 24px;}
+				 .date{font-size: 18px;margin-top:24px;
+					 span{font-size: 18px;}
 				 }
 				 
 				
-				.btn{background: black;font-size: 18px;color:rgb(193, 193, 193);padding:11px 27px 11px 17px;margin-top: 20px;font-family: $regular;
+				.btn{background: black;font-size: 18px;color:rgb(193, 193, 193);padding:11px 27px 11px 17px;margin-top: 20px;
 				
 				
 				}
@@ -3678,15 +3673,15 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 
 
 .latest-semons{margin-bottom: 116px;
-	h3{margin: 91px 0 30px 0;text-align: center;font-size: 24px;color: $heading;}
+	h3{margin: 91px 0 30px 0;text-align: center;font-size: 24px;}
 	h2{margin-bottom: 72px;font-size: 48px;text-align: center;} 
 		img{margin-bottom: 38px;}
 			p{margin-bottom: 16px;font-size: 34px;
 	  
 		  }
 	 .date{font-size: 21px;color: $heading;}
-		 .sermon-details{font-size: 18px; font-family: $regular;margin-bottom: 40px;}
-		  .see-earlier{text-decoration: none;text-align: center;font-size: 16px;color:$heading;align-self:center;display:flex;justify-content:center;
+		 .sermon-details{font-size: 18px;margin-bottom: 40px;}
+		  .see-earlier{text-decoration: none;text-align: center;font-size: 16px;align-self:center;display:flex;justify-content:center;
 		
 	
 		}
@@ -3709,7 +3704,7 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 	   p{display: block;font-size: 20px;
 		  span{display: block;}
 	   }
-	   .number{font-size: 18px;font-family: $regular;margin-top: 12px;}
+	   .number{font-size: 18px;margin-top: 12px;}
    
 	   }
    
@@ -3719,7 +3714,7 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 		   .days{font-size: 13px; font-family: $regular;}
 		   .name{font-size: 22;margin: 17px 0;}
 		   p{font-size:20px;
-			   span{display: inline;font-size: 10px; font-family: $regular;display: none;}
+			   span{display: inline;font-size: 10px;display: none;}
 		   }
 	   }
 	}
@@ -3734,7 +3729,7 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
    .wards-inner{  display: flex;justify-content:space-evenly;flex-direction:row;
    .ward{display: flex;flex-direction: row;
 	   p{font-size:21px;margin-top:10px;width: 100%;margin-right:0;margin-left:30px;
-		   span{display: block;margin-top:20px; font-size: 16px; font-weight: $regular;}
+		   span{display: block;margin-top:20px; font-size: 16px;}
 		   em{display: inline;}
 	   }
 	   img{width:150px;height: 180px;object-fit: contain;margin-right:0;}
@@ -3757,7 +3752,7 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 		.heading{font-size: 20px;margin-bottom: 20px;
 		span{display: block;}
 		}
-	.number{font-size: 20px;margin-top:10px;display: block;font-family: $regular;}
+	.number{font-size: 20px;margin-top:10px;display: block;}
 	
 		}
 		}
@@ -3795,8 +3790,8 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 .messy-banner{height: 550px;width: 100%;position: relative;z-index:1;margin-bottom:48px;
 	
 		.banner-inner{@include column();margin-left:71px;
-					p{margin-top: 283px; color: #FFFFFF;font-size: 22px;margin-bottom: 18px;}
-					h1{font-size: 43px;color: #FFFFFF;}
+					p{margin-top: 283px; font-size: 22px;margin-bottom: 18px;}
+					h1{font-size: 43px;}
 				
 				}
 			
@@ -3805,12 +3800,12 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 // about-messy-church
 	.about-messy-church{margin: 0 20px;
 			img{width: 100%;object-fit: contain;}
-			.heading{margin-top: 100px;font-family: $regular;font-size: 22px;margin: 90px 0 24px 0;}
-			h2{font-size: 30px;font-family: $regular;margin-bottom: 12px;}
-					p{font-size: 22px;font-family: $italic;}
+			.heading{margin-top: 100px;font-size: 22px;margin: 90px 0 24px 0;}
+			h2{font-size: 30px;margin-bottom: 12px;}
+					p{font-size: 22px;}
 		
 					.about-messy-details{margin-top: 30px;
-						p{font-size: 22px;font-family: $regular;line-height: 1.3;margin: 22px 12px  0 12px;}
+						p{font-size: 22px;line-height: 1.3;margin: 22px 12px  0 12px;}
 					}
 					
 				}
@@ -3821,8 +3816,8 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 				 .test-infr{margin: 0;
 		
 			h4{font-size: 24px;margin: 4px 0 12px 0;}
-				.test-details{font-family: $regular;font-size: 22px;line-height: 30npx;margin-bottom: 18px;}
-					.further-details{font-size: 21px;font-size: $medium;margin-bottom: 0;}
+				.test-details{font-size: 22px;margin-bottom: 18px;}
+					.further-details{font-size: 21px;margin-bottom: 0;}
 				 }
 				}
 
@@ -3839,7 +3834,7 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 				// start-latest-sermons
 
 .latest-semons{margin-bottom: 116px;
-	.fas{position: absolute;top:18%;padding:12px;border-radius: 50%;left: 50%;color: white;}
+	.fas{position: absolute;top:18%;padding:12px;border-radius: 50%;left: 50%;}
 	
 	  h2{margin-bottom: 20px;font-size: 35px;text-align: center;} 
 	  img{margin-bottom: 38px;}
@@ -3861,14 +3856,14 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 			.event-img{object-fit: cover;height: 380px;width: 100%;margin: auto;margin-bottom: 10%;}
 	
 			.event-inner1{margin-top:0;margin-left:48px;
-				h3{margin-bottom: 18px;font-family: $medium;font-size: 38px;}
-			.event-date{margin-top:18px;margin-bottom: 10px;font-family: $regular;font-size: 18px;}
-			.event-heading{font-size: 21px;font-family: $regular;}
-			.event-time{margin-bottom: 27px;font-size: 18px;font-family: $regular;}
-			.direction{font-size: 21px;font-family:$regular;
+				h3{margin-bottom: 18px;font-size: 38px;}
+			.event-date{margin-top:18px;margin-bottom: 10px;font-size: 18px;}
+			.event-heading{font-size: 21px;}
+			.event-time{margin-bottom: 27px;font-size: 18px;}
+			.direction{font-size: 21px;
 				span{display: block;}
 			}
-			.event-infr{margin-top: 27px;font-size: 16px;font-family: $regular;margin-right: 0;line-height: 1.3;}
+			.event-infr{margin-top: 27px;font-size: 16px;margin-right: 0;line-height: 1.3;}
 			 
 			}
 		}
@@ -3878,7 +3873,7 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 		.event-details{
 	
 		 .day{font-size: 18px;}
-		 .event-infr{ font-size: 16px;font-family: $regular;line-height: 1;margin-right: 0;}
+		 .event-infr{ font-size: 16px;line-height: 1;margin-right: 0;}
 		 .time{margin-top: 30px;font-size: 14px;}
 		}
 		}
@@ -3978,26 +3973,6 @@ textarea{width: 230px;height: 80px;border: 1px solid #F0F0F0;margin-bottom: 20px
 // end-latest-sermons
 
 
-// .notices{background-color: #8DDED2;padding: 80px 20px 50px 20px;
-// 	h3{	color: $heading;font-size: 24px;font-family: $medium;}
-// 	h2{font-size: 35px;margin-top:29px;margin-bottom: 36px;font-family: $medium;}
-// .acc{background-color:white;margin-bottom: 50px;padding:34px 30px 42px 28px; 
-//  .accordion_head { cursor: pointer;font-size:19px;font-family:$medium;padding-left: 0;
-//  }
-//  .accordion_body p {
-// 	 margin-right: 10px;font-size: 17px;font-family: $regular;margin-top: 29px;line-height: 1.3;
-//  }
-
-
-// .plusminus {
-//  float:right;
-// font-size: 24px;font-family: $thin;position: relative;top:-6px;
-
-// }
-   
-// }
- 
-// }
 
 
 
@@ -4034,18 +4009,18 @@ font-size: 24px;position: relative;top:-6px;
 
  
  .contact-details{
-	 p{margin-bottom: 23px;font-family:$Futura;font-size:15px;
+	 p{margin-bottom: 23px;font-size:15px;
 		 span{display: block;}
 	 }
  
  }
 
  .contact-form{
-	p{font-size: 20px;font-family: $medium;margin-left:40px;}
-    input[type="text"]{font-size: 15px;color: #F0F0F0;width: 100%;height:30px;border: 1px solid #F0F0F0;margin-top:25px;margin-bottom: 20px;padding-left: 15px;border: 1px solid #F0F0F0;font-family: $regular;}
-     input[type="email"]{font-size: 15px;color: #F0F0F0;width: 100%;height: 30px;border: 1px solid #F0F0F0;margin-bottom: 20px;padding-left: 15px;border: 1px solid #F0F0F0;font-family: $regular;}
-    textarea{width: 100%;height: 65px;border: 1px solid #F0F0F0;margin-bottom: 20px;color: #F0F0F0;font-size: 15px;padding: 15px 0 0 15px;border: 1px solid #F0F0F0;font-family: $regular;}
-	.send {text-decoration: none;color: white;background-color: $btncolor;height: 45px;width: 200px;font-size: 20px;font-family: $medium;border: none;
+	p{font-size: 20px;margin-left:40px;}
+    input[type="text"]{font-size: 15px;width: 100%;height:30px;margin-top:25px;margin-bottom: 20px;padding-left: 15px;}
+     input[type="email"]{font-size: 15px;width: 100%;height: 30px;margin-bottom: 20px;padding-left: 15px;}
+    textarea{width: 100%;height: 65px;margin-bottom: 20px;font-size: 15px;padding: 15px 0 0 15px;}
+	.send {height: 45px;width: 200px;font-size: 20px;border: none;
 	
 	}
 
@@ -4069,13 +4044,13 @@ font-size: 24px;position: relative;top:-6px;
 // team-page
 .the-team{margin: 0 38px;
 	h2{text-align: center;font-size: 32px;margin-bottom: 50px;}
-	.header{text-align: center;color: $heading;margin-top: 100px;font-size: 24px;margin-bottom: 23px;}
+	.header{text-align: center;margin-top: 100px;font-size: 24px;margin-bottom: 23px;}
 	p{color: $black;}
 	// .team-inner{
  .t{img{width: 100%;}
 	h3{font-size: 25px;margin:15px 0 15px 0;}
-	.lead-pastor{color: $heading;font-size: 20px;font-size: $regular;}
-	.pastor-infr{font-size: 14px;color: $black;font-family: $regular;margin:15px 0 50px 0;line-height: 20px;}
+	.lead-pastor{font-size: 20px;}
+	.pastor-infr{font-size: 14px;margin:15px 0 50px 0;line-height: 20px;}
 
 }
 
@@ -4085,19 +4060,19 @@ font-size: 24px;position: relative;top:-6px;
 	//   church-funds
 	.church-funds{
 		.church-funds-inner{text-align: center;margin: 88px 15px 0 15px;
-		h3{font-size: 24px;color: $heading;margin-bottom: 36px;}
+		h3{font-size: 24px;margin-bottom: 36px;}
 		h2{font-size: 30px;margin-bottom: 30px;}
 		p{font-size: 20px;line-height: 1.3;margin:0;}
 		img{width: 100%;margin-top: 80px;margin-bottom: 80px;}
 }
 
- .raised-funds{margin:0;background-color:#EBE6DD;padding: 100px 48px;margin-bottom:50px;
+ .raised-funds{margin:0;padding: 100px 48px;margin-bottom:50px;
 
-	.line1{width:100%; height: 1px;background-color:#979797;padding:0 109px;margin-top: 5px;}
-	.line2{background-color: $black;width:80%; height: 3px;bottom:-125%;
+	.line1{width:100%; height: 1px;padding:0 109px;margin-top: 5px;}
+	.line2{width:80%; height: 3px;bottom:-125%;
 	
 	}
-	.milestone{display: flex;justify-content: flex-end;margin-right: 30px;color: $heading;
+	.milestone{display: flex;justify-content: flex-end;margin-right: 30px;
 
 	}
 	.raised-funds-details{display: flex;justify-content: space-between;
@@ -4127,19 +4102,19 @@ width: 200px;font-size: 20px;}
 		 
 		.about-img{width: 200px;height: 200px;background-position:center;background-size:cover;
 		.overlay{ 
-			a{position:absolute;top: 40%;left: 55%;transform: translate(-50%, 50%);font-size: 18px;color: $white;font-family: $bold;z-index: 2;}
+			a{position:absolute;top: 40%;left: 55%;transform: translate(-50%, 50%);font-size: 18px;z-index: 2;}
 			}
 		}
 	
 			.about-img2{width: 200px;height: 200px;background-position:center; background-size:cover;
 				.overlay{ 
-					a{position:absolute;top: 40%;left: 65%;transform: translate(-50%, 50%);font-size: 18px;color: $white;font-family: $bold;z-index: 2;width:100%;}
+					a{position:absolute;top: 40%;left: 65%;transform: translate(-50%, 50%);font-size: 18px;z-index: 2;width:100%;}
 					}
 				}
 			
 			.about-img3{width: 200px;height: 200px;background-position:center; background-size: cover;
 			.overlay{ 
-				a{position:absolute;top: 40%;left: 50%;transform: translate(-50%, 50%);font-size: 18px;color: $white;font-family: $bold;z-index: 2;}
+				a{position:absolute;top: 40%;left: 50%;transform: translate(-50%, 50%);font-size: 18px;z-index: 2;}
 				}
 			}
 		}
@@ -4151,7 +4126,7 @@ width: 200px;font-size: 20px;}
 	.about-img{position: relative;margin:0 8% 5% 8%;
 		img{width: 100%;padding-right: 0;object-fit: cover;}
 		.overlay{ 
-		p{position:absolute;top: 40%;left: 80%;transform: translate(-50%, 50%);font-size: 26px;color: $white;font-family: $bold;width: 100%;}
+		p{position:absolute;top: 40%;left: 80%;transform: translate(-50%, 50%);font-size: 26px;width: 100%;}
 		}
 
 	
@@ -4161,16 +4136,16 @@ width: 200px;font-size: 20px;}
 
 
 .about-us{text-align: center;
-   h3{font-size: 24px;color: $heading;font-weight: $regular;margin-bottom: 20px;font-family: $regular;}
-   h2{font-size: 30px;margin-bottom: 25px;font-family: $regular;}
-   p{margin-bottom: 20px;font-size: 18px;font-family: $regular;text-align: center;}
-   .middle{font-family: $regular;margin: auto;margin-bottom: 20px;}
+   h3{font-size: 24px;margin-bottom: 20px;}
+   h2{font-size: 30px;margin-bottom: 25px;}
+   p{margin-bottom: 20px;font-size: 18px;text-align: center;}
+   .middle{margin: auto;margin-bottom: 20px;}
 }
 
 
 // meetings
 .meetings{
-	h2{margin: 60px 0 20px 0;text-align: center;font-size: 24px;color: $heading;}
+	h2{margin: 60px 0 20px 0;text-align: center;font-size: 24px;}
 	.meeting{display: flex;justify-content:center;flex-direction:row;flex-wrap:wrap;
 
    .meeting-ifr1{ display: flex;margin:0 20px;
@@ -4185,7 +4160,7 @@ width: 200px;font-size: 20px;}
 			span{display: block;padding-bottom: 13px;font-size:22px;}
 		}
 		p{font-size: 22px;line-height: 1.3;}
-			.text{margin-top: 21px;margin-bottom: 39px;font-size: 18px;line-height: 1.3;margin-right: 35px;margin-left: 35px;font-family: $regular;}
+			.text{margin-top: 21px;margin-bottom: 39px;font-size: 18px;line-height: 1.3;margin-right: 35px;margin-left: 35px;}
 	
 }
 	.sunset{width: 100%;margin-left:0;margin-top: 35px;display: none;}
@@ -4201,13 +4176,13 @@ transition: all .8s ease-in-out;top: 25%;left:50%;color: white;border: 8px solid
 // start-latest-sermons
 .latest-semons{margin-bottom: 75px!important;text-align:center;
 	.fas{position: absolute;top:20%;padding:12px;border-radius: 50%;left: 50%;color: white;font-size: 30px;transform: translate(-50%, 50%);}
-	  h3{margin: 91px 0 30px 0;text-align: center;font-size: 20px;color: $heading;}
+	  h3{margin: 91px 0 30px 0;text-align: center;font-size: 20px;}
 	  h2{font-size: 30px;margin-bottom: 20px; }
 	  a{font-size: 16px;margin-left: 0;}
 	
 .latest-s-header{font-size:16px;}
 	
-	.date{font-size: 16px;color: $heading;}
+	.date{font-size: 16px;}
 }
 
 .our-latest-semons{margin: 80px 165px 50px 165px;}

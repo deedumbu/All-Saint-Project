@@ -65,6 +65,10 @@ button:focus {
   outline: none;
 }
 
+a:focus {
+  outline: none;
+}
+
 .head {
   z-index: 200;
   position: relative;
@@ -1485,7 +1489,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .footer .contact-form input[type="text"] {
   font-size: 15px;
-  color: #F0F0F0;
+  color: black;
   width: 100%;
   height: 45px;
   border: 1px solid #F0F0F0;
@@ -1498,7 +1502,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .footer .contact-form input[type="email"] {
   font-size: 15px;
-  color: #F0F0F0;
+  color: black;
   width: 100%;
   height: 45px;
   border: 1px solid #F0F0F0;
@@ -1513,7 +1517,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 70px;
   border: 1px solid #F0F0F0;
   margin-bottom: 20px;
-  color: #F0F0F0;
+  color: black;
   font-size: 15px;
   padding: 15px 0 0 15px;
   border: 1px solid #F0F0F0;
@@ -1983,6 +1987,13 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: #1C0902;
   margin-left: 72px;
   font-family: "Roboto-medium";
+}
+
+.church-funds a:hover {
+  background: #C46508;
+  color: black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .message h2 {
@@ -3117,10 +3128,8 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 35px;
     margin-top: 29px;
     margin-bottom: 36px;
-    font-family: "Roboto-medium";
   }
   .notices .acc {
-    background-color: white;
     margin-bottom: 50px;
     padding: 34px 30px 42px 28px;
   }
@@ -3154,12 +3163,9 @@ input[type="range"]::-webkit-slider-thumb {
     text-align: center;
   }
   .latest-semons .fas {
-    position: absolute;
     top: 17%;
     padding: 12px;
-    border-radius: 50%;
     left: 50%;
-    color: white;
   }
   .latest-semons h3 {
     margin: 91px 0 15px 0 !important;
@@ -3382,7 +3388,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .location {
     margin-top: 120px;
-    background-color: #EBE6DD;
     padding: 0 0 60px 0;
   }
   .location h3 {
@@ -3550,13 +3555,9 @@ input[type="range"]::-webkit-slider-thumb {
     font-family: "Roboto-regularnormal";
   }
   .footer .additional-infr .send {
-    text-decoration: none;
-    color: white;
-    background-color: #280F06;
     height: 40px;
     width: 200px;
     font-size: 20px;
-    font-family: "Roboto-medium";
     border: none;
     position: absolute;
     bottom: 95%;
@@ -3580,13 +3581,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .children-church-banner .banner-inner p {
     margin-top: 253px;
-    color: #FFFFFF;
     font-size: 26px;
     margin-bottom: 30px;
   }
   .children-church-banner .banner-inner h1 {
     font-size: 90px;
-    color: #FFFFFF;
   }
   .about-children-church {
     margin: 100px 72px;
@@ -3668,13 +3667,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .sermons-banner .banner-inner p {
     margin-top: 283px;
-    color: #FFFFFF;
     font-size: 26px;
     margin-bottom: 30px;
   }
   .sermons-banner .banner-inner h1 {
     font-size: 90px;
-    color: #FFFFFF;
   }
   .our-latest-semons {
     margin: 104px 165px 153px 165px;
@@ -3770,7 +3767,6 @@ input[type="range"]::-webkit-slider-thumb {
             justify-content: center;
   }
   .latest-semons .line {
-    background-color: #1C0902;
     width: 8%;
     height: 3px;
     margin-top: 15px;
@@ -3799,13 +3795,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .church-funds .raised-funds {
     margin: 72px 71px 39px 72px;
-    background-color: #EBE6DD;
     padding: 109px 48px;
   }
   .church-funds .raised-funds .line1 {
     width: 100%;
     height: 1px;
-    background-color: #979797;
     padding: 0 109px;
     margin-top: 5px;
   }
@@ -3836,14 +3830,10 @@ input[type="range"]::-webkit-slider-thumb {
   .church-funds .raised-funds .raised-funds-details p {
     margin-top: 33px;
     font-size: 21px;
-    color: #1C0902;
   }
   .church-funds .funds-btn {
-    text-decoration: none;
-    color: #EBE6DD;
     font-size: 24;
     padding: 12px 20px;
-    background-color: #1C0902;
     margin-left: 72px;
   }
   .message h2 {
@@ -3877,13 +3867,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .event-banner .events-banner-inner p {
     margin-top: 293px;
-    color: #FFFFFF;
     font-size: 22px;
     margin-bottom: 20px;
   }
   .event-banner .events-banner-inner h1 {
     font-size: 40px;
-    color: #FFFFFF;
   }
   .comingup-events {
     margin: auto;
@@ -4022,7 +4010,6 @@ input[type="range"]::-webkit-slider-thumb {
   .about-children-church .children-heading {
     margin-top: 40px;
     font-size: 21px;
-    font-family: "Roboto-bold";
   }
   .about-children-church p {
     font-size: 18px;
@@ -4032,7 +4019,6 @@ input[type="range"]::-webkit-slider-thumb {
   .about-children-church ol {
     font-size: 22px;
     margin: 15px 50px;
-    font-family: "Roboto-regularnormal";
     line-height: 25px;
   }
   .activities-for-children {
@@ -4099,13 +4085,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .messy-banner .banner-inner p {
     margin-top: 283px;
-    color: #FFFFFF;
     font-size: 22px;
     margin-bottom: 18px;
   }
   .messy-banner .banner-inner h1 {
     font-size: 40px;
-    color: #FFFFFF;
   }
   .about-messy-church {
     margin: 0 20px;
@@ -4115,18 +4099,15 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .about-messy-church .heading {
     margin-top: 100px;
-    font-family: "Roboto-regularnormal";
     font-size: 20px;
     margin: 48px 0 24px 0;
   }
   .about-messy-church h2 {
     font-size: 35px;
-    font-family: "Roboto-regularnormal";
     margin-bottom: 12px;
   }
   .about-messy-church p {
     font-size: 18px;
-    font-family: "Roboto-italic";
     line-height: 1.4;
   }
   .about-messy-church .about-messy-details {
@@ -4134,7 +4115,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .about-messy-church .about-messy-details p {
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     line-height: 1.4;
     margin: 22px 12px  0 12px;
   }
@@ -4159,14 +4139,12 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 30px 0 12px 0;
   }
   .testimonials .test-infr .test-details {
-    font-family: "Roboto-regularnormal";
     font-size: 18px;
     line-height: 1.4;
     margin-bottom: 20px;
   }
   .testimonials .test-infr .further-details {
     font-size: 18px;
-    font-family: "Roboto-medium";
     line-height: 1.4;
   }
   .sermons-banner {
@@ -4312,7 +4290,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .church-funds .church-funds-inner h3 {
     font-size: 24px;
-    color: #C46508;
     margin-bottom: 19px;
   }
   .church-funds .church-funds-inner h2 {
@@ -4331,19 +4308,16 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .church-funds .raised-funds {
     margin: 0;
-    background-color: #EBE6DD;
     padding: 100px 48px;
     margin-bottom: 50px;
   }
   .church-funds .raised-funds .line1 {
     width: 100%;
     height: 1px;
-    background-color: #979797;
     padding: 0 109px;
     margin-top: 5px;
   }
   .church-funds .raised-funds .line2 {
-    background-color: #454545;
     width: 80%;
     height: 3px;
     bottom: -125%;
@@ -4387,6 +4361,12 @@ input[type="range"]::-webkit-slider-thumb {
     width: 200px;
     font-size: 20px;
   }
+  .church-funds a:hover {
+    color: white;
+    background-color: #1C0902;
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
   .message h2 {
     font-size: 26px;
     margin-top: 70px;
@@ -4423,14 +4403,11 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 15px 0 15px 0;
   }
   .the-team .t .lead-pastor {
-    color: #C46508;
     font-size: 24px;
-    font-size: "Roboto-regularnormal";
   }
   .the-team .t .pastor-infr {
     font-size: 18px;
     color: #454545;
-    font-family: "Roboto-regularnormal";
     margin: 15px 0 50px 0;
     line-height: 20px;
   }
@@ -4499,7 +4476,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .about-church .about-church-inner .church-details .days {
     font-size: 14px;
-    font-family: "Roboto-regularnormal";
   }
   .about-church .about-church-inner .church-details .name {
     font-size: 20;
@@ -4511,7 +4487,6 @@ input[type="range"]::-webkit-slider-thumb {
   .about-church .about-church-inner .church-details p span {
     display: none;
     font-size: 14px;
-    font-family: "Roboto-regularnormal";
   }
   .wards {
     margin: auto;
@@ -4616,7 +4591,6 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 18px;
     margin-top: 31px;
     display: block;
-    font-family: "Roboto-regularnormal";
   }
 }
 
@@ -4655,16 +4629,12 @@ input[type="range"]::-webkit-slider-thumb {
     margin-bottom: 20px;
   }
   .head .nav ul li a {
-    color: black;
-    text-decoration: none;
     font-size: 15px;
-    font-family: "Roboto-medium";
   }
   .head .call-us {
     font-size: 16px;
     position: relative;
     left: 60%;
-    color: #1C0902;
   }
   .menuopen {
     margin-left: 6px;
@@ -4678,7 +4648,6 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     width: 20px;
     height: 1px;
-    background-color: white;
     margin-top: 3px;
     z-index: 999;
   }
@@ -4720,15 +4689,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .banner a {
     padding: 15px 15px;
-    text-decoration: none;
-    color: #454545;
-    background-color: white;
-  }
-  .icons {
-    display: none;
-  }
-  .icon {
-    display: none;
   }
   .about-all {
     padding-top: 84px;
@@ -4746,15 +4706,11 @@ input[type="range"]::-webkit-slider-thumb {
     background-size: cover;
   }
   .about-all .about-img .overlay a {
-    position: absolute;
     top: 40%;
     left: 55%;
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     font-size: 18px;
-    color: #ffffff;
-    font-family: "Roboto-bold";
-    z-index: 2;
   }
   .about-all .about-img2 {
     width: 200px;
@@ -4763,15 +4719,11 @@ input[type="range"]::-webkit-slider-thumb {
     background-size: cover;
   }
   .about-all .about-img2 .overlay a {
-    position: absolute;
     top: 40%;
     left: 65%;
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     font-size: 18px;
-    color: #ffffff;
-    font-family: "Roboto-bold";
-    z-index: 2;
     width: 100%;
   }
   .about-all .about-img3 {
@@ -4781,15 +4733,11 @@ input[type="range"]::-webkit-slider-thumb {
     background-size: cover;
   }
   .about-all .about-img3 .overlay a {
-    position: absolute;
     top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     font-size: 18px;
-    color: #ffffff;
-    font-family: "Roboto-bold";
-    z-index: 2;
   }
   .about-church {
     padding-top: 84px;
@@ -4817,8 +4765,6 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     font-size: 26px;
-    color: #ffffff;
-    font-family: "Roboto-bold";
     width: 100%;
   }
   .about-us {
@@ -4826,24 +4772,18 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .about-us h3 {
     font-size: 24px;
-    color: #C46508;
-    font-weight: "Roboto-regularnormal";
     margin-bottom: 20px;
-    font-family: "Roboto-regularnormal";
   }
   .about-us h2 {
     font-size: 30px;
     margin-bottom: 25px;
-    font-family: "Roboto-regularnormal";
   }
   .about-us p {
     margin-bottom: 20px;
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     text-align: center;
   }
   .about-us .middle {
-    font-family: "Roboto-regularnormal";
     margin: auto;
     margin-bottom: 20px;
   }
@@ -4851,7 +4791,6 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 60px 0 20px 0;
     text-align: center;
     font-size: 24px;
-    color: #C46508;
   }
   .meetings .meeting {
     display: -webkit-box;
@@ -4901,13 +4840,9 @@ input[type="range"]::-webkit-slider-thumb {
     line-height: 1.3;
   }
   .meetings .meeting .card2 .text {
-    margin-top: 21px;
-    margin-bottom: 39px;
+    margin: 21px 35px 39px 35px;
     font-size: 18px;
     line-height: 1.3;
-    margin-right: 35px;
-    margin-left: 35px;
-    font-family: "Roboto-regularnormal";
   }
   .meetings .meeting .sunset {
     width: 100%;
@@ -4944,32 +4879,24 @@ input[type="range"]::-webkit-slider-thumb {
   .work-section .ourwek .work-inner .infr h3 {
     padding-top: 65px;
     font-size: 26px;
-    color: #C46508;
-    font-family: "Roboto-regularnormal";
   }
   .work-section .ourwek .work-inner .infr h2 {
     margin: 17px 0 10px 0;
     font-size: 30px;
-    font-family: "Roboto-medium";
   }
   .work-section .ourwek .work-inner .infr .donate-inf1 {
     padding-bottom: 18px;
     padding-right: 14px;
     line-height: 1.3;
     font-size: 20px;
-    font-family: "Roboto-regularnormal";
   }
   .work-section .ourwek .work-inner .infr .donate-inf2 {
     padding-right: 15px;
     line-height: 1.3;
     font-size: 20px;
     margin-bottom: 30px;
-    font-family: "Roboto-regularnormal";
   }
   .work-section .ourwek .work-inner .infr .w-btn {
-    border: none;
-    color: white;
-    background-color: #280F06;
     font-size: 22px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4983,7 +4910,6 @@ input[type="range"]::-webkit-slider-thumb {
     width: 305px;
     height: 55px;
     padding: 15px 0;
-    text-decoration: none;
   }
   .work-section .ourwek .work-inner .infr .items img {
     width: 42px;
@@ -5153,10 +5079,8 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 35px;
     margin-top: 29px;
     margin-bottom: 36px;
-    font-family: "Roboto-medium";
   }
   .notices .acc {
-    background-color: white;
     margin-bottom: 50px;
     padding: 34px 30px 42px 28px;
   }
@@ -5202,7 +5126,6 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 91px 0 30px 0;
     text-align: center;
     font-size: 20px;
-    color: #C46508;
   }
   .latest-semons h2 {
     font-size: 30px;
@@ -5217,7 +5140,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .latest-semons .date {
     font-size: 16px;
-    color: #C46508;
   }
   .donations {
     margin-top: 0;
@@ -5234,12 +5156,10 @@ input[type="range"]::-webkit-slider-thumb {
   .donations .donation-inner h3 {
     padding-top: 87px;
     font-size: 24px;
-    color: #C46508;
   }
   .donations .donation-inner h2 {
     margin: 17px 0 24px 0;
     font-size: 35px;
-    font-weight: "Roboto-medium";
   }
   .donations .donation-inner .donate-infr1 {
     padding-bottom: 30px;
@@ -5285,11 +5205,9 @@ input[type="range"]::-webkit-slider-thumb {
   .payments .payments-inner .snap-details p {
     line-height: 16px;
     font-size: 12px;
-    font-family: "Futura bold";
   }
   .payments .payments-inner .snap-details .snap-header {
     margin-bottom: 12px;
-    font-family: "Roboto-bold";
   }
   .payments .payments-inner .snap-details span {
     display: block;
@@ -5314,12 +5232,10 @@ input[type="range"]::-webkit-slider-thumb {
             justify-content: space-between;
   }
   .payments .banking-information .bank-details .bank-type p {
-    font-family: "Futura bold";
     line-height: 17px;
     font-size: 12px;
   }
   .payments .banking-information .bank-details .reference p {
-    font-family: "Futura bold";
     line-height: 17px;
     font-size: 12px;
   }
@@ -5327,19 +5243,16 @@ input[type="range"]::-webkit-slider-thumb {
     display: block;
   }
   .payments .banking-information .bank-details .number p {
-    font-family: "Futura bold";
     line-height: 17px;
     font-size: 12px;
   }
   .payments .banking-information .PBO-number {
     margin-bottom: 60px;
-    font-family: "Futura bold";
     font-size: 12.5px;
   }
   .line {
     width: 90%;
     height: 1px;
-    background-color: #979797;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5366,23 +5279,17 @@ input[type="range"]::-webkit-slider-thumb {
     height: 500px;
     background-color: #F8E1F4;
     padding-left: 45px;
-    font-weight: "Roboto-medium";
   }
   .our-team .card h3 {
     padding-top: 87px;
     font-size: 24px;
-    color: #C46508;
   }
   .our-team .card h2 {
     margin: 17px 0 24px 0;
     font-size: 35px;
-    font-weight: "Roboto-medium";
   }
   .our-team .card a {
     margin-top: 36x;
-    text-decoration: none;
-    color: white;
-    background-color: #280F06;
     width: 50%;
   }
   .our-team .card .donate-infr1 {
@@ -5390,18 +5297,15 @@ input[type="range"]::-webkit-slider-thumb {
     padding-right: 40px;
     line-height: 1.3;
     font-size: 20px;
-    font-family: "Roboto-regularnormal";
   }
   .our-team .card .donate-inf2 {
     padding-right: 40px;
     line-height: 1.3;
     font-size: 20px;
     margin-bottom: 44px;
-    font-family: "Roboto-regularnormal";
   }
   .location {
     margin-top: 0;
-    background-color: #EBE6DD;
     padding: 0  71px 30px 71px;
   }
   .location h2 {
@@ -5412,12 +5316,10 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .location .location-details .location-heading {
     font-size: 30px;
-    font-family: "Roboto-medium";
     margin: 24px 0;
   }
   .location .location-details .location-infr {
     font-size: 16px;
-    font-family: "Roboto-regularnormal";
     margin-bottom: 17px;
     margin-right: 0;
     line-height: 1.3;
@@ -5425,7 +5327,6 @@ input[type="range"]::-webkit-slider-thumb {
   .location .location-details p {
     font-size: 12px;
     margin-bottom: 19px;
-    font-family: "Roboto-medium";
   }
   .location .map {
     display: -webkit-box;
@@ -5458,7 +5359,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .footer .contact-details p {
     margin-bottom: 23px;
-    font-family: "Futura New";
     font-size: 15px;
   }
   .footer .contact-details p span {
@@ -5474,42 +5374,34 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .footer .contact-form input[type="text"] {
     font-size: 15px;
-    color: #F0F0F0;
     width: 100%;
     height: 35px;
-    border: 1px solid #F0F0F0;
     margin-top: 25px;
     margin-bottom: 20px;
     padding-left: 15px;
-    border: 1px solid #F0F0F0;
-    font-family: "Roboto-regularnormal";
   }
   .footer .contact-form input[type="email"] {
     font-size: 15px;
-    color: #F0F0F0;
     width: 100%;
     height: 35px;
-    border: 1px solid #F0F0F0;
     margin-bottom: 20px;
     padding-left: 15px;
-    border: 1px solid #F0F0F0;
-    font-family: "Roboto-regularnormal";
   }
   .footer .contact-form textarea {
     width: 100%;
     height: 50px;
-    border: 1px solid #F0F0F0;
     margin-bottom: 20px;
-    color: #F0F0F0;
     font-size: 15px;
     padding: 15px 0 0 15px;
-    border: 1px solid #F0F0F0;
-    font-family: "Roboto-regularnormal";
   }
   .footer .contact-form .send {
     height: 35px;
     font-size: 15px;
     width: 150px;
+  }
+  .footer .contact-form .send:hover {
+    background-color: #1C0902;
+    color: white;
   }
   .footer .additional-infr {
     display: -webkit-box;
@@ -5767,21 +5659,17 @@ input[type="range"]::-webkit-slider-thumb {
   .comingup-events .evente .event-inner1 .event-date {
     margin-top: 18px;
     margin-bottom: 10px;
-    font-family: "Roboto-regularnormal";
     font-size: 16px;
   }
   .comingup-events .evente .event-inner1 .event-heading {
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
   }
   .comingup-events .evente .event-inner1 .event-time {
     margin-bottom: 15px;
     font-size: 16px;
-    font-family: "Roboto-regularnormal";
   }
   .comingup-events .evente .event-inner1 .direction {
     font-size: 16px;
-    font-family: "Roboto-regularnormal";
   }
   .comingup-events .evente .event-inner1 .direction span {
     display: block;
@@ -5862,13 +5750,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .sermons-banner .banner-inner p {
     margin-top: 240px;
-    color: #FFFFFF;
     font-size: 22px;
     margin-bottom: 18px;
   }
   .sermons-banner .banner-inner h1 {
     font-size: 43px;
-    color: #FFFFFF;
   }
   .our-latest-semons {
     margin: 80px 165px 50px 165px;
@@ -5893,7 +5779,6 @@ input[type="range"]::-webkit-slider-thumb {
     position: absolute;
     top: 40%;
     left: 11%;
-    color: white;
     font-size: 80px;
   }
   .our-latest-semons .sermons-details img {
@@ -5951,7 +5836,6 @@ input[type="range"]::-webkit-slider-thumb {
     margin-bottom: 14px;
   }
   .latest-semons .line {
-    background-color: #1C0902;
     width: 10%;
     height: 3px;
     margin-top: 15px;
@@ -6014,14 +5898,12 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .church-funds .raised-funds {
     margin: 0;
-    background-color: #EBE6DD;
     padding: 100px 48px;
     margin-bottom: 50px;
   }
   .church-funds .raised-funds .line1 {
     width: 100%;
     height: 1px;
-    background-color: #979797;
     padding: 0 109px;
     margin-top: 5px;
   }
@@ -6264,16 +6146,19 @@ input[type="range"]::-webkit-slider-thumb {
     margin-bottom: 10px;
   }
   .head .nav ul li a {
-    color: black;
     text-decoration: none;
     font-size: 15px;
-    font-family: "Roboto-medium";
+  }
+  .latest-semons img {
+    width: 100%;
+  }
+  .latest-semons .line {
+    left: 43.5%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .head .nav-contact p {
-    color: white;
     z-index: 8;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6302,10 +6187,8 @@ input[type="range"]::-webkit-slider-thumb {
     padding-left: 38px;
   }
   .head .nav ul li a {
-    color: black;
     text-decoration: none;
     font-size: 25px;
-    font-family: "Roboto-medium";
   }
   .banner {
     height: 650px;
@@ -6324,9 +6207,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .banner a {
     padding: 23px 28px;
-    text-decoration: none;
-    color: #454545;
-    background-color: white;
     margin-top: 30px;
   }
   .about-all {
@@ -6362,9 +6242,6 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     font-size: 26px;
-    color: #ffffff;
-    font-family: "Roboto-bold";
-    z-index: 2;
   }
   .about-all .about-img3 {
     width: 200px;
@@ -6378,9 +6255,6 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     font-size: 26px;
-    color: #ffffff;
-    font-family: "Roboto-bold";
-    z-index: 2;
   }
   .about-us {
     text-align: center;
@@ -6402,7 +6276,6 @@ input[type="range"]::-webkit-slider-thumb {
   .about-us .middle {
     margin-left: 0;
     margin-right: 0;
-    font-family: "Roboto-regularnormal";
   }
   .meetings {
     margin: auto;
@@ -6426,14 +6299,9 @@ input[type="range"]::-webkit-slider-thumb {
   .meetings .meeting .card1 {
     width: 327px;
     height: 330px;
-    background-color: #F9C49A;
     margin-left: 0;
-    outline-offset: -8px;
-    border-radius: 4px;
     margin-bottom: 18px;
     text-align: center;
-    outline: 1px solid #FFFFFF;
-    outline-offset: -6px;
   }
   .meetings .meeting .card1 .date {
     padding-top: 19px;
@@ -6455,7 +6323,6 @@ input[type="range"]::-webkit-slider-thumb {
     line-height: 1.3;
     margin-right: 30px;
     margin-left: 30px;
-    font-family: "Roboto-regularnormal";
   }
   .work-section {
     margin-top: 122px;
@@ -6468,7 +6335,6 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
     height: 0px;
     padding-left: 10px;
-    z-index: 1;
   }
   .work-section .ourwek .work-inner .infr h3 {
     padding-top: 30px;
@@ -6491,8 +6357,6 @@ input[type="range"]::-webkit-slider-thumb {
     margin-bottom: 15px;
   }
   .work-section .ourwek .work-inner .infr .w-btn {
-    border: none;
-    color: white;
     font-size: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6579,9 +6443,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .events .see-more-btn {
     font-size: 21px;
-    color: #454545;
-    text-decoration: none;
-    font-family: "Roboto-regularnormal";
   }
   .events .service-time {
     margin-top: 55px;
@@ -6594,22 +6455,17 @@ input[type="range"]::-webkit-slider-thumb {
     margin-left: 0;
   }
   .notices {
-    background-color: #8DDED2;
     padding: 100px 71px 114px 71px;
   }
   .notices h3 {
-    color: #C46508;
     font-size: 24px;
-    font-family: "Roboto-medium";
   }
   .notices h2 {
     font-size: 48px;
     margin-top: 29px;
     margin-bottom: 36px;
-    font-family: "Roboto-medium";
   }
   .notices .acc {
-    background-color: white;
     margin-bottom: 50px;
     padding: 34px 30px 42px 28px;
   }
@@ -6618,14 +6474,12 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
     position: relative;
     font-size: 16px;
-    font-family: "Roboto-medium";
   }
   .notices .acc h4:after {
     content: "+";
     position: absolute;
     right: 20px;
     font-size: 50px;
-    font-family: "Roboto-light";
     top: -90%;
   }
   .notices .acc .content {
@@ -6634,7 +6488,6 @@ input[type="range"]::-webkit-slider-thumb {
   .notices .acc p {
     margin-right: 86px;
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     margin-top: 29px;
     line-height: 1.3;
   }
@@ -6689,39 +6542,29 @@ input[type="range"]::-webkit-slider-thumb {
   .donations .donation-inner {
     width: 100%;
     height: 700px;
-    background-color: #F8E1F4;
     padding-left: 45px;
   }
   .donations .donation-inner h3 {
     padding-top: 87px;
     font-size: 24px;
-    color: #C46508;
-    font-family: "Roboto-medium";
   }
   .donations .donation-inner h2 {
     margin: 17px 0 24px 0;
     font-size: 30px;
-    font-family: "Roboto-medium";
   }
   .donations .donation-inner .donate-infr1 {
     padding-bottom: 30px;
     padding-right: 40px;
     line-height: 1.3;
     font-size: 20px;
-    font-family: "Roboto-regularnormal";
   }
   .donations .donation-inner .donate-inf2 {
     padding-right: 40px;
     line-height: 1.3;
     font-size: 20px;
     margin-bottom: 44px;
-    font-family: "Roboto-regularnormal";
   }
   .donations .donation-inner .btn {
-    text-decoration: none;
-    color: white;
-    background-color: #280F06;
-    font-family: "Roboto-medium";
     width: 70%;
   }
   .payments {
@@ -6749,16 +6592,13 @@ input[type="range"]::-webkit-slider-thumb {
   .payments .payments-inner .snap-details p {
     line-height: 1.3;
     font-size: 20px;
-    font-family: "Futura bold";
   }
   .payments .payments-inner .snap-details .snap-header {
     margin-bottom: 10px;
-    font-family: "Roboto-bold";
   }
   .payments .payments-inner .snap-details span {
     display: block;
     font-size: 20px;
-    font-family: "Futura bold";
   }
   .payments .payments-inner .snap-details .middle {
     margin-bottom: 25px;
@@ -6766,7 +6606,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .payments .banking-infr {
     font-size: 20px;
-    font-family: "Futura New";
     margin-bottom: 25px;
   }
   .payments .banking-infr span {
@@ -6780,7 +6619,6 @@ input[type="range"]::-webkit-slider-thumb {
   .payments .banking-information .banking-head {
     margin-bottom: 15px;
     font-size: 20px;
-    font-family: "Roboto-bold";
   }
   .payments .banking-information .bank-details {
     display: -webkit-box;
@@ -6792,12 +6630,10 @@ input[type="range"]::-webkit-slider-thumb {
     margin-right: auto;
   }
   .payments .banking-information .bank-details .bank-type p {
-    font-family: "Futura bold";
     line-height: 1.3;
     font-size: 20px;
   }
   .payments .banking-information .bank-details .reference p {
-    font-family: "Futura bold";
     line-height: 1.3;
     font-size: 20px;
   }
@@ -6805,19 +6641,16 @@ input[type="range"]::-webkit-slider-thumb {
     display: block;
   }
   .payments .banking-information .bank-details .number p {
-    font-family: "Futura bold";
     line-height: 1.3;
     font-size: 20px;
   }
   .payments .banking-information .PBO-number {
     margin-top: 50px;
-    font-family: "Futura bold";
     font-size: 20px;
   }
   .line {
     width: 90%;
     height: 1px;
-    background-color: #979797;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6845,56 +6678,43 @@ input[type="range"]::-webkit-slider-thumb {
   .our-team .card {
     width: 100%;
     height: 700px;
-    background-color: #F8E1F4;
     padding-left: 45px;
   }
   .our-team .card h3 {
     padding-top: 87px;
     font-size: 24px;
-    color: #C46508;
-    font-family: "Roboto-medium";
   }
   .our-team .card h2 {
     margin: 17px 0 24px 0;
     font-size: 35px;
-    font-family: "Roboto-medium";
   }
   .our-team .card .donate-infr1 {
     padding-bottom: 30px;
     padding-right: 40px;
     line-height: 1.3;
     font-size: 20px;
-    font-family: "Roboto-regularnormal";
   }
   .our-team .card .donate-inf2 {
     padding-right: 40px;
     line-height: 1.3;
     font-size: 20px;
     margin-bottom: 34px;
-    font-family: "Roboto-regularnormal";
   }
   .our-team .card a {
     margin-top: 36x;
-    text-decoration: none;
-    color: white;
-    background-color: #280F06;
     width: 80%;
   }
   .location {
     margin-top: 70px;
-    background-color: #EBE6DD;
     padding: 0 71px;
   }
   .location h3 {
     padding-top: 76px;
     font-size: 26px;
-    font-family: "Roboto-medium";
-    color: #C46508;
     padding-bottom: 12px;
   }
   .location h2 {
     font-size: 48px;
-    font-family: "Roboto-medium";
     margin-bottom: 0;
   }
   .location img {
@@ -6908,12 +6728,10 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .location .location-details .location-heading {
     font-size: 36px;
-    font-family: "Roboto-medium";
     margin-bottom: 24px;
   }
   .location .location-details .location-infr {
     font-size: 20px;
-    font-family: "Roboto-regularnormal";
     margin-bottom: 17px;
     margin-right: 36%;
     line-height: 1.3;
@@ -6921,7 +6739,6 @@ input[type="range"]::-webkit-slider-thumb {
   .location .location-details p {
     font-size: 20px;
     margin-bottom: 19px;
-    font-family: "Roboto-medium";
   }
   .location .map {
     padding-bottom: 0;
@@ -6945,11 +6762,9 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .footer .logo p {
     font-size: 20px;
-    font-family: "Roboto-medium";
   }
   .footer .contact-details p {
     margin-bottom: 23px;
-    font-family: "Futura New";
     font-size: 15px;
   }
   .footer .contact-details p span {
@@ -6957,55 +6772,43 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .footer .contact-form {
     font-size: 20px;
-    font-family: "Roboto-medium";
     margin-bottom: 60px;
   }
   .footer .contact-form input[type="text"] {
     font-size: 15px;
-    color: #F0F0F0;
     width: 220px;
     height: 40px;
-    border: 1px solid #F0F0F0;
     margin-top: 25px;
     margin-bottom: 20px;
     padding-left: 15px;
   }
   .footer .contact-form input[type="email"] {
     font-size: 15px;
-    color: #F0F0F0;
     width: 220px;
     height: 40px;
-    border: 1px solid #F0F0F0;
     margin-bottom: 20px;
     padding-left: 15px;
   }
   .footer .contact-form textarea {
     width: 220px;
     height: 80px;
-    border: 1px solid #F0F0F0;
     margin-bottom: 20px;
-    color: #F0F0F0;
     font-size: 15px;
     padding: 15px 0 0 15px;
   }
   .footer .contact-form .send {
     text-decoration: none;
-    color: white;
-    background-color: #280F06;
     height: 40px;
     width: 220px;
     font-size: 16px;
-    font-family: "Roboto-medium";
     border: none;
     text-align: center;
   }
   .footer .additional-infr .additional-infr-heading {
     font-size: 20px;
-    font-family: "Roboto-medium";
     margin-bottom: 20px;
   }
   .footer .additional-infr p {
-    font-family: "Roboto-medium";
     font-size: 15px;
     margin-bottom: 18px;
   }
@@ -7067,7 +6870,6 @@ input[type="range"]::-webkit-slider-thumb {
   .about-children-church .children-heading {
     margin-top: 0;
     font-size: 21px;
-    font-family: "Roboto-bold";
   }
   .about-children-church p {
     font-size: 18px;
@@ -7077,7 +6879,6 @@ input[type="range"]::-webkit-slider-thumb {
   .about-children-church ol {
     font-size: 22px;
     margin: 15px 50px;
-    font-family: "Roboto-regularnormal";
     line-height: 1.2;
   }
   .activities-for-children {
@@ -7143,13 +6944,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .messy-banner .banner-inner p {
     margin-top: 283px;
-    color: #FFFFFF;
     font-size: 22px;
     margin-bottom: 18px;
   }
   .messy-banner .banner-inner h1 {
     font-size: 43px;
-    color: #FFFFFF;
   }
   .about-messy-church {
     margin: 0 20px;
@@ -7161,25 +6960,21 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .about-messy-church .heading {
     margin-top: 100px;
-    font-family: "Roboto-regularnormal";
     font-size: 22px;
     margin: 90px 0 24px 0;
   }
   .about-messy-church h2 {
     font-size: 30px;
-    font-family: "Roboto-regularnormal";
     margin-bottom: 12px;
   }
   .about-messy-church p {
     font-size: 22px;
-    font-family: "Roboto-italic";
   }
   .about-messy-church .about-messy-details {
     margin-top: 30px;
   }
   .about-messy-church .about-messy-details p {
     font-size: 22px;
-    font-family: "Roboto-regularnormal";
     line-height: 1.3;
     margin: 22px 12px  0 12px;
   }
@@ -7198,14 +6993,12 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 0 0 12px 0;
   }
   .testimonials .test-infr .test-details {
-    font-family: "Roboto-regularnormal";
     font-size: 20px;
     line-height: 1.3;
     margin-bottom: 20px;
   }
   .testimonials .test-infr .further-details {
     font-size: 20px;
-    font-family: "Roboto-medium";
     line-height: 1.2;
   }
   .event-banner {
@@ -7230,13 +7023,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .event-banner .events-banner-inner p {
     margin-top: 293px;
-    color: #FFFFFF;
     font-size: 22px;
     margin-bottom: 20px;
   }
   .event-banner .events-banner-inner h1 {
     font-size: 43px;
-    color: #FFFFFF;
   }
   .comingup-events {
     margin-top: 100px;
@@ -7262,27 +7053,22 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .comingup-events .event-inner1 h3 {
     margin-bottom: 18px;
-    font-family: "Roboto-medium";
     font-size: 38px;
   }
   .comingup-events .event-inner1 .event-date {
     margin-top: 18px;
     margin-bottom: 10px;
-    font-family: "Roboto-regularnormal";
     font-size: 18px;
   }
   .comingup-events .event-inner1 .event-heading {
     font-size: 21px;
-    font-family: "Roboto-regularnormal";
   }
   .comingup-events .event-inner1 .event-time {
     margin-bottom: 27px;
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
   }
   .comingup-events .event-inner1 .direction {
     font-size: 21px;
-    font-family: "Roboto-regularnormal";
   }
   .comingup-events .event-inner1 .direction span {
     display: block;
@@ -7290,7 +7076,6 @@ input[type="range"]::-webkit-slider-thumb {
   .comingup-events .event-inner1 .event-infr {
     margin-top: 27px;
     font-size: 16px;
-    font-family: "Roboto-regularnormal";
     margin-right: 0;
     line-height: 1.3;
   }
@@ -7322,7 +7107,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .coming-up-second .events-inner2 .event-details .event-infr {
     font-size: 16px;
-    font-family: "Roboto-regularnormal";
     line-height: 1;
     margin-right: 0;
   }
@@ -7352,22 +7136,18 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .sermons-banner .banner-inner p {
     margin-top: 283px;
-    color: #FFFFFF;
     font-size: 22px;
     margin-bottom: 18px;
   }
   .sermons-banner .banner-inner h1 {
     font-size: 43px;
-    color: #FFFFFF;
   }
   .our-latest-semons {
     margin: 104px 165px 153px 165px;
   }
   .our-latest-semons .sermon-heading {
     margin-bottom: 62px;
-    font-family: "Roboto-medium";
     font-size: 40px;
-    color: #454545;
   }
   .our-latest-semons .sermons-details {
     display: -webkit-box;
@@ -7398,14 +7178,10 @@ input[type="range"]::-webkit-slider-thumb {
     margin-left: 30px;
   }
   .our-latest-semons .sermons-details .sermons-inner .sermon-heading2 {
-    font-family: "Roboto-bold";
     font-size: 35px;
-    text-decoration: none;
-    color: #454545;
   }
   .our-latest-semons .sermons-details .sermons-inner .sermon-infr {
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     line-height: 1.3;
     margin-right: 0;
     margin-bottom: 24px;
@@ -7413,23 +7189,16 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .our-latest-semons .sermons-details .sermons-inner .date {
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     margin-top: 24px;
-    text-decoration: none;
-    color: black;
   }
   .our-latest-semons .sermons-details .sermons-inner .date span {
-    color: #C46508;
-    font-family: "Roboto-regularnormal";
     font-size: 18px;
   }
   .our-latest-semons .sermons-details .sermons-inner .btn {
     background: black;
     font-size: 18px;
-    color: #c1c1c1;
     padding: 11px 27px 11px 17px;
     margin-top: 20px;
-    font-family: "Roboto-regularnormal";
   }
   .latest-semons {
     margin-bottom: 116px;
@@ -7438,7 +7207,6 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 91px 0 30px 0;
     text-align: center;
     font-size: 24px;
-    color: #C46508;
   }
   .latest-semons .heading3 {
     margin-bottom: 72px;
@@ -7450,12 +7218,9 @@ input[type="range"]::-webkit-slider-thumb {
   .latest-semons p {
     margin-bottom: 16px;
     font-size: 36px;
-    font-family: "Roboto-medium";
   }
   .latest-semons .date {
     font-size: 21px;
-    color: #C46508;
-    font-family: "Roboto-medium";
   }
   .latest-semons .sermon-details {
     font-size: 18px;
@@ -7463,10 +7228,8 @@ input[type="range"]::-webkit-slider-thumb {
     line-height: 1.3;
   }
   .latest-semons .see-earlier {
-    text-decoration: none;
     text-align: center;
     font-size: 16px;
-    color: #C46508;
     -ms-flex-item-align: center;
         align-self: center;
     display: -webkit-box;
@@ -7475,11 +7238,9 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-family: "Roboto-medium";
     margin-top: 23px;
   }
   .latest-semons .line {
-    background-color: #1C0902;
     width: 12%;
     height: 3px;
     margin-top: 15px;
@@ -7526,7 +7287,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .about-church .about-church-inner .minister-details .number {
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     margin-top: 12px;
   }
   .about-church .about-church-inner .church-details {
@@ -7539,7 +7299,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .about-church .about-church-inner .church-details .days {
     font-size: 13px;
-    font-family: "Roboto-regularnormal";
   }
   .about-church .about-church-inner .church-details .name {
     font-size: 22;
@@ -7551,7 +7310,6 @@ input[type="range"]::-webkit-slider-thumb {
   .about-church .about-church-inner .church-details p span {
     display: inline;
     font-size: 10px;
-    font-family: "Roboto-regularnormal";
     display: none;
   }
   .wards {
@@ -7594,7 +7352,6 @@ input[type="range"]::-webkit-slider-thumb {
     display: block;
     margin-top: 20px;
     font-size: 16px;
-    font-weight: "Roboto-regularnormal";
   }
   .wards .wards-inner .ward p em {
     display: block;
@@ -7657,7 +7414,6 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 16px;
     margin-top: 10px;
     display: block;
-    font-family: "Roboto-regularnormal";
   }
 }
 
@@ -7701,10 +7457,7 @@ input[type="range"]::-webkit-slider-thumb {
     padding-left: 38px;
   }
   .head .nav ul li a {
-    color: black;
-    text-decoration: none;
     font-size: 25px;
-    font-family: "Roboto-medium";
   }
   .banner {
     height: 650px;
@@ -7723,9 +7476,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .banner a {
     padding: 23px 28px;
-    text-decoration: none;
-    color: #454545;
-    background-color: white;
     margin-top: 30px;
   }
   .about-all .about-img {
@@ -7746,7 +7496,6 @@ input[type="range"]::-webkit-slider-thumb {
     background-position: center;
   }
   .about-all .about-img2 .overlay a {
-    position: absolute;
     top: 40%;
     left: 66%;
     -webkit-transform: translate(-50%, 50%);
@@ -7760,7 +7509,6 @@ input[type="range"]::-webkit-slider-thumb {
     background-position: center;
   }
   .about-all .about-img3 .overlay a {
-    position: absolute;
     top: 40%;
     left: 48%;
     -webkit-transform: translate(-50%, 50%);
@@ -7877,39 +7625,30 @@ input[type="range"]::-webkit-slider-thumb {
   .work-section .ourwek .work-inner .infr {
     width: 100%;
     height: 0px;
-    background-color: #F8E1F4;
     padding-left: 20px;
     z-index: 1;
   }
   .work-section .ourwek .work-inner .infr h3 {
     padding-top: 50px;
     font-size: 26px;
-    color: #C46508;
-    font-family: "Roboto-regularnormal";
   }
   .work-section .ourwek .work-inner .infr h2 {
     margin: 17px 0 10px 0;
     font-size: 30px;
-    font-family: "Roboto-medium";
   }
   .work-section .ourwek .work-inner .infr .donate-inf1 {
     padding-bottom: 18px;
     padding-right: 14px;
     line-height: 1.3;
     font-size: 20px;
-    font-family: "Roboto-regularnormal";
   }
   .work-section .ourwek .work-inner .infr .donate-inf2 {
     padding-right: 15px;
     line-height: 1.3;
     font-size: 20px;
     margin-bottom: 20px;
-    font-family: "Roboto-regularnormal";
   }
   .work-section .ourwek .work-inner .infr .w-btn {
-    border: none;
-    color: white;
-    background-color: #280F06;
     font-size: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7923,7 +7662,6 @@ input[type="range"]::-webkit-slider-thumb {
     width: 205px;
     height: 30px;
     padding: 0;
-    text-decoration: none;
   }
   .work-section .ourwek .work-inner .infr .items img {
     width: 30px;
@@ -7944,9 +7682,6 @@ input[type="range"]::-webkit-slider-thumb {
     margin-bottom: 72px;
     font-size: 48px;
     text-align: center;
-    font-family: "Roboto-medium";
-    text-decoration: none;
-    color: #454545;
   }
   .latest-semons img {
     margin-bottom: 38px;
@@ -7955,15 +7690,10 @@ input[type="range"]::-webkit-slider-thumb {
   .latest-semons .latest-s-header {
     margin-bottom: 16px;
     font-size: 36px;
-    font-family: "Roboto-medium";
     text-decoration: none;
-    color: #454545;
   }
   .latest-semons .date {
     font-size: 21px;
-    color: #C46508;
-    font-family: "Roboto-medium";
-    text-decoration: none;
     margin-top: 16px !important;
     display: block;
   }
@@ -7973,13 +7703,10 @@ input[type="range"]::-webkit-slider-thumb {
   .events h3 {
     margin-bottom: 24px;
     font-size: 20px;
-    color: #C46508;
-    font-family: "Roboto-regularnormal";
   }
   .events h2 {
     margin-bottom: 30px;
     font-size: 48px;
-    font-family: "Roboto-regularnormal";
   }
   .events .upcoming-events {
     display: -webkit-box;
@@ -7999,7 +7726,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .events .upcoming-events .events-infr .event-day {
     font-size: 30px;
-    font-family: "Roboto-regularnormal";
     margin-bottom: 24px;
   }
   .events .upcoming-events .events-infr .event-category {
@@ -8009,9 +7735,7 @@ input[type="range"]::-webkit-slider-thumb {
   .events .upcoming-events .events-infr .event-details {
     font-size: 16px;
     line-height: 1.3;
-    font-family: "Roboto-regularnormal";
     margin-right: 25px;
-    font-family: "Roboto-regularnormal";
   }
   .events .upcoming-events .events-infr .event-date {
     font-size: 18px;
@@ -8025,9 +7749,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .events .see-more-btn {
     font-size: 18px;
-    color: #454545;
-    text-decoration: none;
-    font-family: "Roboto-regularnormal";
   }
   .events .sunday-time-table {
     display: -webkit-box;
@@ -8065,10 +7786,6 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
   }
   .events .menfellowship .card {
-    background-color: #F9C49A;
-    outline: 1px solid white;
-    outline-offset: -11px;
-    border-radius: 4px;
     width: 691px;
     height: 560px;
     padding: 18px;
@@ -8084,22 +7801,18 @@ input[type="range"]::-webkit-slider-thumb {
     display: none;
   }
   .notices {
-    background-color: #8DDED2;
     padding: 100px 71px 114px 71px;
   }
   .notices h3 {
     color: #C46508;
     font-size: 24px;
-    font-family: "Roboto-medium";
   }
   .notices h2 {
     font-size: 48px;
     margin-top: 29px;
     margin-bottom: 36px;
-    font-family: "Roboto-medium";
   }
   .notices .acc {
-    background-color: white;
     margin-bottom: 50px;
     padding: 34px 30px 42px 28px;
   }
@@ -8108,14 +7821,12 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
     position: relative;
     font-size: 16px;
-    font-family: "Roboto-medium";
   }
   .notices .acc h4:after {
     content: "+";
     position: absolute;
     right: 20px;
     font-size: 50px;
-    font-family: "Roboto-light";
     top: -90%;
   }
   .notices .acc .content {
@@ -8124,7 +7835,6 @@ input[type="range"]::-webkit-slider-thumb {
   .notices .acc p {
     margin-right: 86px;
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     margin-top: 29px;
     line-height: 1.3;
   }
@@ -8135,14 +7845,6 @@ input[type="range"]::-webkit-slider-thumb {
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .acc.active h4:after {
-    content: "";
-    background-color: #454545;
-    height: 2px;
-    width: 42px;
-    top: 70%;
-    position: absolute;
-  }
   .latest-semons {
     margin-bottom: 116px;
   }
@@ -8152,7 +7854,6 @@ input[type="range"]::-webkit-slider-thumb {
     padding: 12px;
     border-radius: 50%;
     left: 30%;
-    color: white;
   }
   .latest-semons h2 {
     margin-bottom: 72px;
@@ -8184,39 +7885,29 @@ input[type="range"]::-webkit-slider-thumb {
   .donations .donation-inner {
     width: 100%;
     height: 700px;
-    background-color: #F8E1F4;
     padding-left: 45px;
   }
   .donations .donation-inner h3 {
     padding-top: 87px;
     font-size: 24px;
-    color: #C46508;
-    font-family: "Roboto-medium";
   }
   .donations .donation-inner h2 {
     margin: 17px 0 24px 0;
     font-size: 30px;
-    font-family: "Roboto-medium";
   }
   .donations .donation-inner .donate-infr1 {
     padding-bottom: 30px;
     padding-right: 40px;
     line-height: 1.3;
     font-size: 20px;
-    font-family: "Roboto-regularnormal";
   }
   .donations .donation-inner .donate-inf2 {
     padding-right: 40px;
     line-height: 1.3;
     font-size: 20px;
     margin-bottom: 44px;
-    font-family: "Roboto-regularnormal";
   }
   .donations .donation-inner .btn {
-    text-decoration: none;
-    color: white;
-    background-color: #280F06;
-    font-family: "Roboto-medium";
     width: 70%;
   }
   .our-team {
@@ -8243,50 +7934,38 @@ input[type="range"]::-webkit-slider-thumb {
   .our-team .card h3 {
     padding-top: 87px;
     font-size: 24px;
-    color: #C46508;
-    font-family: "Roboto-medium";
   }
   .our-team .card h2 {
     margin: 17px 0 24px 0;
     font-size: 35px;
-    font-family: "Roboto-medium";
   }
   .our-team .card .donate-infr1 {
     padding-bottom: 30px;
     padding-right: 40px;
     line-height: 1.3;
     font-size: 20px;
-    font-family: "Roboto-regularnormal";
   }
   .our-team .card .donate-inf2 {
     padding-right: 40px;
     line-height: 1.3;
     font-size: 20px;
     margin-bottom: 34px;
-    font-family: "Roboto-regularnormal";
   }
   .our-team .card a {
     margin-top: 36x;
-    text-decoration: none;
-    color: white;
-    background-color: #280F06;
     width: 80%;
   }
   .location {
     margin-top: 183px;
-    background-color: #EBE6DD;
     padding: 0 71px;
   }
   .location h3 {
     padding-top: 76px;
     font-size: 26px;
-    font-family: "Roboto-medium";
-    color: #C46508;
     padding-bottom: 12px;
   }
   .location h2 {
     font-size: 48px;
-    font-family: "Roboto-medium";
     margin-bottom: 53px;
   }
   .location .location-img {
@@ -8299,12 +7978,10 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .location .location-details .location-heading {
     font-size: 25px;
-    font-family: "Roboto-medium";
     margin-bottom: 10px;
   }
   .location .location-details .location-infr {
     font-size: 12px;
-    font-family: "Roboto-regularnormal";
     margin-bottom: 8px;
     line-height: 1.2;
     word-spacing: 6px;
@@ -8312,12 +7989,10 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .location .location-details p {
     font-size: 12px;
-    font-family: "Roboto-medium";
     line-height: 1.3;
   }
   .location .location-details .digits {
     margin: 0 0 10px 0;
-    font-family: "Roboto-medium";
   }
   .location .map {
     padding-bottom: 92px;
@@ -8343,11 +8018,9 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .footer .logo p {
     font-size: 20px;
-    font-family: "Roboto-medium";
   }
   .footer .contact-details p {
     margin-bottom: 23px;
-    font-family: "Futura New";
     font-size: 15px;
   }
   .footer .contact-details p span {
@@ -8355,54 +8028,40 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .footer .contact-form {
     font-size: 20px;
-    font-family: "Roboto-medium";
     margin-bottom: 23px;
   }
   .footer .contact-form input[type="text"] {
     font-size: 15px;
-    color: #F0F0F0;
     width: 230px;
     height: 35px;
-    border: 1px solid #F0F0F0;
     margin-top: 25px;
     margin-bottom: 20px;
     padding-left: 15px;
   }
   .footer .contact-form input[type="email"] {
     font-size: 15px;
-    color: #F0F0F0;
     width: 230px;
     height: 35px;
-    border: 1px solid #F0F0F0;
     margin-bottom: 20px;
     padding-left: 15px;
   }
   .footer .contact-form textarea {
     width: 230px;
     height: 80px;
-    border: 1px solid #F0F0F0;
     margin-bottom: 20px;
-    color: #F0F0F0;
     font-size: 15px;
     padding: 15px 0 0 15px;
   }
   .footer .contact-form .send {
-    text-decoration: none;
-    color: white;
-    background-color: #280F06;
     height: 40px;
     width: 230px;
     font-size: 20px;
-    font-family: "Roboto-medium";
-    border: none;
   }
   .footer .additional-infr .additional-infr-heading {
     font-size: 20px;
-    font-family: "Roboto-medium";
     margin-bottom: 20px;
   }
   .footer .additional-infr p {
-    font-family: "Roboto-medium";
     font-size: 15px;
     margin-bottom: 30px;
   }
@@ -8464,7 +8123,6 @@ input[type="range"]::-webkit-slider-thumb {
   .about-children-church .children-heading {
     margin-top: 0;
     font-size: 21px;
-    font-family: "Roboto-bold";
   }
   .about-children-church p {
     font-size: 18px;
@@ -8474,7 +8132,6 @@ input[type="range"]::-webkit-slider-thumb {
   .about-children-church ol {
     font-size: 22px;
     margin: 15px 50px;
-    font-family: "Roboto-regularnormal";
     line-height: 1.2;
   }
   .activities-for-children {
@@ -8540,13 +8197,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .messy-banner .banner-inner p {
     margin-top: 283px;
-    color: #FFFFFF;
     font-size: 22px;
     margin-bottom: 18px;
   }
   .messy-banner .banner-inner h1 {
     font-size: 43px;
-    color: #FFFFFF;
   }
   .about-messy-church {
     margin: 0 20px;
@@ -8595,14 +8250,12 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 0 0 12px 0;
   }
   .testimonials .test-infr .test-details {
-    font-family: "Roboto-regularnormal";
     font-size: 20px;
     line-height: 1.3;
     margin-bottom: 20px;
   }
   .testimonials .test-infr .further-details {
     font-size: 20px;
-    font-family: "Roboto-medium";
     line-height: 1.2;
   }
   .gallery {
@@ -8633,13 +8286,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .event-banner .events-banner-inner p {
     margin-top: 293px;
-    color: #FFFFFF;
     font-size: 22px;
     margin-bottom: 20px;
   }
   .event-banner .events-banner-inner h1 {
     font-size: 43px;
-    color: #FFFFFF;
   }
   .comingup-events {
     margin-top: 100px;
@@ -8665,27 +8316,22 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .comingup-events .event-inner1 h3 {
     margin-bottom: 18px;
-    font-family: "Roboto-medium";
     font-size: 38px;
   }
   .comingup-events .event-inner1 .event-date {
     margin-top: 18px;
     margin-bottom: 10px;
-    font-family: "Roboto-regularnormal";
     font-size: 18px;
   }
   .comingup-events .event-inner1 .event-heading {
     font-size: 21px;
-    font-family: "Roboto-regularnormal";
   }
   .comingup-events .event-inner1 .event-time {
     margin-bottom: 27px;
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
   }
   .comingup-events .event-inner1 .direction {
     font-size: 21px;
-    font-family: "Roboto-regularnormal";
   }
   .comingup-events .event-inner1 .direction span {
     display: block;
@@ -8693,7 +8339,6 @@ input[type="range"]::-webkit-slider-thumb {
   .comingup-events .event-inner1 .event-infr {
     margin-top: 27px;
     font-size: 16px;
-    font-family: "Roboto-regularnormal";
     margin-right: 0;
     line-height: 1.3;
   }
@@ -8729,7 +8374,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .coming-up-second .events-inner2 .event-details .event-infr {
     font-size: 16px;
-    font-family: "Roboto-regularnormal";
     line-height: 1;
     margin-right: 0;
   }
@@ -8759,13 +8403,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .sermons-banner .banner-inner p {
     margin-top: 283px;
-    color: #FFFFFF;
     font-size: 22px;
     margin-bottom: 18px;
   }
   .sermons-banner .banner-inner h1 {
     font-size: 43px;
-    color: #FFFFFF;
   }
   .our-latest-semons .sermons-details .sermons-img .fas {
     position: absolute;
@@ -8783,14 +8425,10 @@ input[type="range"]::-webkit-slider-thumb {
     margin-left: 30px;
   }
   .sermons-inner .sermon-heading2 {
-    font-family: "Roboto-bold";
     font-size: 35px;
-    text-decoration: none;
-    color: #454545;
   }
   .sermons-inner .sermon-infr {
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     line-height: 1.3;
     margin-right: 0;
     margin-bottom: 24px;
@@ -8798,14 +8436,9 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .sermons-inner .date {
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     margin-top: 24px;
-    text-decoration: none;
-    color: black;
   }
   .sermons-inner .date span {
-    color: #C46508;
-    font-family: "Roboto-regularnormal";
     font-size: 18px;
   }
   .sermons-inner .btn {
@@ -8814,7 +8447,6 @@ input[type="range"]::-webkit-slider-thumb {
     color: #c1c1c1;
     padding: 11px 27px 11px 17px;
     margin-top: 20px;
-    font-family: "Roboto-regularnormal";
   }
   .latest-semons {
     margin-bottom: 116px;
@@ -8823,7 +8455,6 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 91px 0 30px 0;
     text-align: center;
     font-size: 24px;
-    color: #C46508;
   }
   .latest-semons h2 {
     margin-bottom: 72px;
@@ -8843,14 +8474,12 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .latest-semons .sermon-details {
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     margin-bottom: 40px;
   }
   .latest-semons .see-earlier {
     text-decoration: none;
     text-align: center;
     font-size: 16px;
-    color: #C46508;
     -ms-flex-item-align: center;
         align-self: center;
     display: -webkit-box;
@@ -8905,7 +8534,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .about-church .about-church-inner .minister-details .number {
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     margin-top: 12px;
   }
   .about-church .about-church-inner .church-details {
@@ -8930,7 +8558,6 @@ input[type="range"]::-webkit-slider-thumb {
   .about-church .about-church-inner .church-details p span {
     display: inline;
     font-size: 10px;
-    font-family: "Roboto-regularnormal";
     display: none;
   }
   .wards {
@@ -8973,7 +8600,6 @@ input[type="range"]::-webkit-slider-thumb {
     display: block;
     margin-top: 20px;
     font-size: 16px;
-    font-weight: "Roboto-regularnormal";
   }
   .wards .wards-inner .ward p em {
     display: inline;
@@ -9039,7 +8665,6 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 20px;
     margin-top: 10px;
     display: block;
-    font-family: "Roboto-regularnormal";
   }
   .payments .payments-inner img {
     -o-object-fit: contain;
@@ -9079,13 +8704,11 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .messy-banner .banner-inner p {
     margin-top: 283px;
-    color: #FFFFFF;
     font-size: 22px;
     margin-bottom: 18px;
   }
   .messy-banner .banner-inner h1 {
     font-size: 43px;
-    color: #FFFFFF;
   }
   .about-messy-church {
     margin: 0 20px;
@@ -9097,25 +8720,21 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .about-messy-church .heading {
     margin-top: 100px;
-    font-family: "Roboto-regularnormal";
     font-size: 22px;
     margin: 90px 0 24px 0;
   }
   .about-messy-church h2 {
     font-size: 30px;
-    font-family: "Roboto-regularnormal";
     margin-bottom: 12px;
   }
   .about-messy-church p {
     font-size: 22px;
-    font-family: "Roboto-italic";
   }
   .about-messy-church .about-messy-details {
     margin-top: 30px;
   }
   .about-messy-church .about-messy-details p {
     font-size: 22px;
-    font-family: "Roboto-regularnormal";
     line-height: 1.3;
     margin: 22px 12px  0 12px;
   }
@@ -9136,14 +8755,11 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 4px 0 12px 0;
   }
   .testimonials .test-infr .test-details {
-    font-family: "Roboto-regularnormal";
     font-size: 22px;
-    line-height: 30npx;
     margin-bottom: 18px;
   }
   .testimonials .test-infr .further-details {
     font-size: 21px;
-    font-size: "Roboto-medium";
     margin-bottom: 0;
   }
   .gallery {
@@ -9162,7 +8778,6 @@ input[type="range"]::-webkit-slider-thumb {
     padding: 12px;
     border-radius: 50%;
     left: 50%;
-    color: white;
   }
   .latest-semons h2 {
     margin-bottom: 20px;
@@ -9203,27 +8818,22 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .comingup-events .event-inner1 h3 {
     margin-bottom: 18px;
-    font-family: "Roboto-medium";
     font-size: 38px;
   }
   .comingup-events .event-inner1 .event-date {
     margin-top: 18px;
     margin-bottom: 10px;
-    font-family: "Roboto-regularnormal";
     font-size: 18px;
   }
   .comingup-events .event-inner1 .event-heading {
     font-size: 21px;
-    font-family: "Roboto-regularnormal";
   }
   .comingup-events .event-inner1 .event-time {
     margin-bottom: 27px;
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
   }
   .comingup-events .event-inner1 .direction {
     font-size: 21px;
-    font-family: "Roboto-regularnormal";
   }
   .comingup-events .event-inner1 .direction span {
     display: block;
@@ -9231,7 +8841,6 @@ input[type="range"]::-webkit-slider-thumb {
   .comingup-events .event-inner1 .event-infr {
     margin-top: 27px;
     font-size: 16px;
-    font-family: "Roboto-regularnormal";
     margin-right: 0;
     line-height: 1.3;
   }
@@ -9240,7 +8849,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .coming-up-second .events-inner2 .event-details .event-infr {
     font-size: 16px;
-    font-family: "Roboto-regularnormal";
     line-height: 1;
     margin-right: 0;
   }
@@ -9536,7 +9144,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .footer .contact-details p {
     margin-bottom: 23px;
-    font-family: "Futura New";
     font-size: 15px;
   }
   .footer .contact-details p span {
@@ -9544,51 +9151,34 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .footer .contact-form p {
     font-size: 20px;
-    font-family: "Roboto-medium";
     margin-left: 40px;
   }
   .footer .contact-form input[type="text"] {
     font-size: 15px;
-    color: #F0F0F0;
     width: 100%;
     height: 30px;
-    border: 1px solid #F0F0F0;
     margin-top: 25px;
     margin-bottom: 20px;
     padding-left: 15px;
-    border: 1px solid #F0F0F0;
-    font-family: "Roboto-regularnormal";
   }
   .footer .contact-form input[type="email"] {
     font-size: 15px;
-    color: #F0F0F0;
     width: 100%;
     height: 30px;
-    border: 1px solid #F0F0F0;
     margin-bottom: 20px;
     padding-left: 15px;
-    border: 1px solid #F0F0F0;
-    font-family: "Roboto-regularnormal";
   }
   .footer .contact-form textarea {
     width: 100%;
     height: 65px;
-    border: 1px solid #F0F0F0;
     margin-bottom: 20px;
-    color: #F0F0F0;
     font-size: 15px;
     padding: 15px 0 0 15px;
-    border: 1px solid #F0F0F0;
-    font-family: "Roboto-regularnormal";
   }
   .footer .contact-form .send {
-    text-decoration: none;
-    color: white;
-    background-color: #280F06;
     height: 45px;
     width: 200px;
     font-size: 20px;
-    font-family: "Roboto-medium";
     border: none;
   }
   .footer .additional-infr .additional-infr-heading {
@@ -9619,7 +9209,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .the-team .header {
     text-align: center;
-    color: #C46508;
     margin-top: 100px;
     font-size: 24px;
     margin-bottom: 23px;
@@ -9635,14 +9224,10 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 15px 0 15px 0;
   }
   .the-team .t .lead-pastor {
-    color: #C46508;
     font-size: 20px;
-    font-size: "Roboto-regularnormal";
   }
   .the-team .t .pastor-infr {
     font-size: 14px;
-    color: #454545;
-    font-family: "Roboto-regularnormal";
     margin: 15px 0 50px 0;
     line-height: 20px;
   }
@@ -9652,7 +9237,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .church-funds .church-funds-inner h3 {
     font-size: 24px;
-    color: #C46508;
     margin-bottom: 36px;
   }
   .church-funds .church-funds-inner h2 {
@@ -9671,19 +9255,16 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .church-funds .raised-funds {
     margin: 0;
-    background-color: #EBE6DD;
     padding: 100px 48px;
     margin-bottom: 50px;
   }
   .church-funds .raised-funds .line1 {
     width: 100%;
     height: 1px;
-    background-color: #979797;
     padding: 0 109px;
     margin-top: 5px;
   }
   .church-funds .raised-funds .line2 {
-    background-color: #454545;
     width: 80%;
     height: 3px;
     bottom: -125%;
@@ -9696,7 +9277,6 @@ input[type="range"]::-webkit-slider-thumb {
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-right: 30px;
-    color: #C46508;
   }
   .church-funds .raised-funds .raised-funds-details {
     display: -webkit-box;
@@ -9762,8 +9342,6 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     font-size: 18px;
-    color: #ffffff;
-    font-family: "Roboto-bold";
     z-index: 2;
   }
   .about-all .about-img2 {
@@ -9779,8 +9357,6 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     font-size: 18px;
-    color: #ffffff;
-    font-family: "Roboto-bold";
     z-index: 2;
     width: 100%;
   }
@@ -9797,8 +9373,6 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     font-size: 18px;
-    color: #ffffff;
-    font-family: "Roboto-bold";
     z-index: 2;
   }
   .about-church {
@@ -9827,8 +9401,6 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
     font-size: 26px;
-    color: #ffffff;
-    font-family: "Roboto-bold";
     width: 100%;
   }
   .about-us {
@@ -9836,24 +9408,18 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .about-us h3 {
     font-size: 24px;
-    color: #C46508;
-    font-weight: "Roboto-regularnormal";
     margin-bottom: 20px;
-    font-family: "Roboto-regularnormal";
   }
   .about-us h2 {
     font-size: 30px;
     margin-bottom: 25px;
-    font-family: "Roboto-regularnormal";
   }
   .about-us p {
     margin-bottom: 20px;
     font-size: 18px;
-    font-family: "Roboto-regularnormal";
     text-align: center;
   }
   .about-us .middle {
-    font-family: "Roboto-regularnormal";
     margin: auto;
     margin-bottom: 20px;
   }
@@ -9861,7 +9427,6 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 60px 0 20px 0;
     text-align: center;
     font-size: 24px;
-    color: #C46508;
   }
   .meetings .meeting {
     display: -webkit-box;
@@ -9916,7 +9481,6 @@ input[type="range"]::-webkit-slider-thumb {
     line-height: 1.3;
     margin-right: 35px;
     margin-left: 35px;
-    font-family: "Roboto-regularnormal";
   }
   .meetings .meeting .sunset {
     width: 100%;
@@ -9965,7 +9529,6 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 91px 0 30px 0;
     text-align: center;
     font-size: 20px;
-    color: #C46508;
   }
   .latest-semons h2 {
     font-size: 30px;
@@ -9980,7 +9543,6 @@ input[type="range"]::-webkit-slider-thumb {
   }
   .latest-semons .date {
     font-size: 16px;
-    color: #C46508;
   }
   .our-latest-semons {
     margin: 80px 165px 50px 165px;
