@@ -3905,24 +3905,29 @@ input[type="range"]::-webkit-slider-thumb {
     margin: auto;
   }
   .coming-up-second .events-inner2 {
+    margin-bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .coming-up-second .events-inner2 img {
-    max-width: 150px;
-    height: 183px;
-    margin-left: 4%;
     -o-object-fit: cover;
        object-fit: cover;
     margin-bottom: 30px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
   }
   .coming-up-second .events-inner2 .event-details {
-    margin-left: 35px;
+    margin-left: 15px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .coming-up-second .events-inner2 .event-details h3 {
     font-size: 16px;
@@ -3940,6 +3945,7 @@ input[type="range"]::-webkit-slider-thumb {
   .coming-up-second .events-inner2 .event-details .time {
     margin-top: 10px;
     font-size: 14px;
+    margin-bottom: 18px;
   }
   .children-church-banner {
     height: 500px;
